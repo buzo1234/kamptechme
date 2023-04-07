@@ -162,7 +162,7 @@ const Navbar = () => {
       <Header height={60} px="md">
         <Group position="apart" sx={{ height: "100%" }}>
           <Group>
-            <Image src={"logo.png"} width={"30px"} />
+            <Image src={"logo.png"} width={"30px"} alt="logo..." />
             <Text
               fw={700}
               style={{

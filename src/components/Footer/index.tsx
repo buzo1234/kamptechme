@@ -149,8 +149,8 @@ const Footer = ({ data }: FooterLinksProps) => {
     <footer className={classes.footer}>
       <Container className={classes.inner}>
         <div className={classes.logo}>
-        <Group>
-            <Image src={"logo.png"} width={"30px"} />
+          <Group>
+            <Image src={"logo.png"} width={"30px"} alt="logo..." />
             <Text
               fw={700}
               style={{

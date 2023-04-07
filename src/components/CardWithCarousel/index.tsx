@@ -30,9 +30,9 @@ const useStyles = createStyles((theme) => ({
       border: "0.1px solid rgba(0,114,245)",
     },
     [theme.fn.smallerThan("sm")]: {
-      [`& .${getStylesRef("detail")}`]:{
-        fontSize:rem(12)
-      }
+      [`& .${getStylesRef("detail")}`]: {
+        fontSize: rem(12),
+      },
     },
   },
 
@@ -61,7 +61,7 @@ const CardWithCarousel = () => {
   return (
     <Card radius="md" withBorder padding="xl" className={classes.carousel}>
       <CardSection>
-        <Image src={images[0]} />
+        <Image src={images[0]} alt="product..." />
       </CardSection>
       <Group className={classes.cardHeader} mt="sm">
         <Text fz={"lg"} fw={600}>

@@ -43,7 +43,7 @@ const LogosBanner = () => {
         >
           {company.map((item, index) => {
             return (
-              <Carousel.Slide className={classes.slide}>
+              <Carousel.Slide className={classes.slide} key={index}>
                 <Text
                   fz={rem(40)}
                   color={theme.colors.gray[Math.min(index / 9, index / 5)]}
