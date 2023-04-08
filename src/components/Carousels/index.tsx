@@ -24,13 +24,13 @@ const mockdata = [
   {
     title: "Water Solution",
     description:
-      "The STABFOR unit® is not an ordinary drinking water filter –⁠ it is not a filter at all. It is a flow-through device that comprehensively purifies water throughout the entire household and makes it living, clean and healthy without chemicals.",
+      "The STABFOR unit® is not an ordinary drinking water filter, ⁠ it is not a filter at all. It is a flow-through device that comprehensively purifies water throughout the entire household and makes it living, clean and healthy without chemicals.",
     icon: "11024.jpg",
   },
   {
     title: "IT Solutions",
     description:
-      "MSI has more than 30 years’ of experience in motherboard design & manufacturing, ranked among the world’s top 3 largest motherboard manufacturers, recognized internationally for high quality and stability by clients and individual users.",
+      "MSI has more than 30 years`&apos; of experience in motherboard design & manufacturing, ranked among the world`&apos;s top 3 largest motherboard manufacturers, recognized internationally for high quality and stability by clients and individual users.",
     icon: "msi_it.jpg",
   },
 ];
@@ -192,7 +192,7 @@ const FeaturesCards = () => {
           </div>
           <div className="flex flex-col w-full col-span-1 px-5 md:px-20 lg:px-20 xl:px-20 py-0 md:py-10 lg:py-10 xl:py-10">
             <h1 className="font-bold text-2xl mt-3 md:text-5xl lg:text-5xl xl:text-5xl">IT Solutions</h1>
-            <p className="md:mt-10 lg:mt-10 xl:mt-10 mt-2 ">MSI has more than 30 years’ of experience in motherboard design & manufacturing, ranked among the world’s top 3 largest motherboard manufacturers, recognized internationally for high quality and stability by clients and individual users.</p>
+            <p className="md:mt-10 lg:mt-10 xl:mt-10 mt-2 ">MSI has more than 30 years`&apos; of experience in motherboard design & manufacturing, ranked among the world`&apos;s top 3 largest motherboard manufacturers, recognized internationally for high quality and stability by clients and individual users.</p>
           </div>
         </div>
 

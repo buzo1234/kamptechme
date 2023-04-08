@@ -259,7 +259,7 @@ const Navbar = ({ links }: HeaderResponsiveProps) => {
           <Link href={"/"}>
           
           <Group className="cursor-pointer">
-            <Image src={"logo.png"} width={"30px"} alt="logo..." />
+            <Image src={"logo.png"} width={"30px"} alt="logo..." key="logo"/>
             <Text
               fw={700}
               style={{
@@ -290,7 +290,7 @@ const Navbar = ({ links }: HeaderResponsiveProps) => {
         onClose={close}
         title={
           <Group>
-            <Image src={"logo.png"} width={"30px"} alt="logo..." />
+            <Image src={"logo.png"} width={"30px"} alt="logo..." key="logo2"/>
             <Text
               fw={700}
               style={{
