@@ -143,7 +143,7 @@ const FeaturesCards = () => {
       </Title>
 
       <Text c="dimmed" className={classes.description} ta="center" mt="md" >
-      We believe that technology can be a solution to the world's biggest problems and we're working to make it happen.
+      We believe that technology can be a solution to the world&apos;s biggest problems and we&apos;re working to make it happen.
       </Text>
 
       {/* <SimpleGrid
