@@ -10,6 +10,7 @@ import Link from "next/link";
 
 const useStyles = createStyles((theme) => ({
   root: {
+    
     backgroundColor: "#11284b",
     backgroundSize: "cover",
     backgroundPosition: "center",
