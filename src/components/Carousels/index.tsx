@@ -50,16 +50,7 @@ const useStyles = createStyles((theme) => ({
     margin: "auto",
     padding:rem(20),
     textAlign:"center",
-    "&::after": {
-      content: '""',
-      display: "block",
-      backgroundColor: theme.fn.primaryColor(),
-      width: rem(45),
-      height: rem(2),
-      marginTop: theme.spacing.sm,
-      marginLeft: "auto",
-      marginRight: "auto",
-    },
+    
   },
 
   card: {
@@ -155,10 +146,10 @@ const FeaturesCards = () => {
         {features}
       </SimpleGrid> */}
 
-      <div className="flex flex-col w-full mt-0">
+      <div className="flex flex-col w-full mt-0" id="air_purification">
 
         <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2  " 
-        id="air_purification">
+        >
           
           <div className="flex w-full col-span-1 px-5 md:px-0 lg:px-0 xl:px-0">
             <Image src={"airocide.webp"}  />
