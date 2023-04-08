@@ -237,6 +237,7 @@ const Navbar = ({ links }: HeaderResponsiveProps) => {
       <Link
         //key={link.label}
         href={link.link}
+        key={link.label}
         scroll={false}
         className={cx(classes.link, {
           [classes.linkActive]: active === link.link,
