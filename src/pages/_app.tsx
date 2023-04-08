@@ -6,11 +6,7 @@ import { theme } from "@/utils/theme";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <MantineProvider
-      theme={{ colorScheme: "dark" }}
-      withGlobalStyles
-      withNormalizeCSS
-    >
+    <MantineProvider withGlobalStyles withNormalizeCSS>
       <Layout>
         <Component {...pageProps} />
       </Layout>

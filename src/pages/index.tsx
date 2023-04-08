@@ -5,20 +5,14 @@ import { createStyles, getStylesRef, rem } from "@mantine/core";
 import { HeroImageRight } from "@/components/HeroImageRight";
 import Banner from "@/components/Banner";
 import EmailBanner from "@/components/EmailBanner";
-import BussinessBanner from "@/components/BussinessBanner";
 import Crousels from "@/components/Carousels";
 import LogosBanner from "@/components/LogosBanner";
+import About from "@/components/About";
 
 const inter = Poppins({
   subsets: ["latin"],
   weight: ["300"],
 });
-
-const infoData = {
-  title: "Integrate effortlessly with any technology stack",
-  description:
-    "Every once in a while, you’ll see a Golbat that’s missing some fangs. This happens when hunger drives it to try biting a Steel-type Pokémon.",
-};
 
 export default function Home() {
   return (
@@ -33,11 +27,8 @@ export default function Home() {
         <HeroImageRight />
         <LogosBanner />
         <Crousels />
-        <BussinessBanner
-          description={infoData.description}
-          title={infoData.title}
-        />
         <Banner />
+        <About />
         <EmailBanner />
       </main>
     </>
