@@ -13,10 +13,16 @@ import {
   Menu,
   Button,
   getStylesRef,
+  ScrollArea,
+  UnstyledButton,
+  ThemeIcon,
+  Box,
+  Center,
+  Collapse,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { MantineLogo } from "@mantine/ds";
-import { Icon } from "@tabler/icons-react";
+import { Drawer } from "@mantine/core";
+import { Icon, IconChevronDown } from "@tabler/icons-react";
 import { theme } from "@/utils/theme";
 
 const HEADER_HEIGHT = rem(60);
@@ -121,6 +127,44 @@ const useStyles = createStyles((theme) => ({
         .color,
     },
   },
+  linked: {
+    display: "flex",
+    alignItems: "center",
+    height: "100%",
+    paddingLeft: theme.spacing.md,
+    paddingRight: theme.spacing.md,
+    textDecoration: "none",
+    color: theme.colorScheme === "dark" ? theme.white : theme.black,
+    fontWeight: 500,
+    fontSize: theme.fontSizes.sm,
+
+    [theme.fn.smallerThan("sm")]: {
+      height: rem(42),
+      display: "flex",
+      alignItems: "center",
+      width: "100%",
+    },
+
+    ...theme.fn.hover({
+      backgroundColor:
+        theme.colorScheme === "dark"
+          ? theme.colors.dark[6]
+          : theme.colors.gray[0],
+    }),
+  },
+  collapse: {
+    display: "flex",
+    flexDirection: "column",
+    width: "100%",
+    padding: `${theme.spacing.xs} ${theme.spacing.xl}`,
+    "&:active": theme.activeStyles,
+    ...theme.fn.hover({
+      backgroundColor:
+        theme.colorScheme === "dark"
+          ? theme.colors.dark[7]
+          : theme.colors.gray[0],
+    }),
+  },
 }));
 
 interface HeaderResponsiveProps {
@@ -134,7 +178,25 @@ interface HeaderResponsiveProps {
 const Navbar = ({ links }: HeaderResponsiveProps) => {
   const [opened, { toggle, close }] = useDisclosure(false);
   const [active, setActive] = useState(links[0].link);
-  const { classes, cx } = useStyles();
+  const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
+  const { classes, cx, theme } = useStyles();
+
+  const drawerLinks = links[1].links?.map((item, index) => {
+    return (
+      <UnstyledButton key={item.label} className={classes.collapse}>
+        <Group noWrap align="flex-start">
+          <ThemeIcon size={24} variant="default" radius="md">
+            <item.icon size={rem(22)} color={theme.fn.primaryColor()} />
+          </ThemeIcon>
+          <div>
+            <Text size="sm" fw={500}>
+              {item.label}
+            </Text>
+          </div>
+        </Group>
+      </UnstyledButton>
+    );
+  });
 
   const items = links.map((link) => {
     if (link.links) {
@@ -182,39 +244,74 @@ const Navbar = ({ links }: HeaderResponsiveProps) => {
   });
 
   return (
-    <Header height={HEADER_HEIGHT} className={classes.root}>
-      <Container className={classes.header}>
-        <Group>
-          <Image src={"logo.png"} width={"30px"} alt="logo..." />
-          <Text
-            fw={700}
-            style={{
-              letterSpacing: "1.8",
-            }}
-          >
-            Kamptech
-          </Text>
-        </Group>
-        <Group spacing={5} className={classes.links}>
-          {items}
-        </Group>
+    <>
+      <Header height={HEADER_HEIGHT} className={classes.root}>
+        <Container className={classes.header}>
+          <Group>
+            <Image src={"logo.png"} width={"30px"} alt="logo..." />
+            <Text
+              fw={700}
+              style={{
+                letterSpacing: "1.8",
+              }}
+            >
+              Kamptech
+            </Text>
+          </Group>
+          <Group spacing={5} className={classes.links}>
+            {items}
+          </Group>
 
-        <Burger
-          opened={opened}
-          onClick={toggle}
-          className={classes.burger}
-          size="sm"
-        />
-
-        <Transition transition="pop-top-right" duration={200} mounted={opened}>
-          {(styles) => (
-            <Paper className={classes.dropdown} withBorder style={styles}>
-              {items}
-            </Paper>
-          )}
-        </Transition>
-      </Container>
-    </Header>
+          <Burger
+            opened={opened}
+            onClick={toggle}
+            className={classes.burger}
+            size="sm"
+          />
+        </Container>
+      </Header>
+      <Drawer
+        padding="md"
+        zIndex={1000000}
+        size={"100%"}
+        opened={opened}
+        onClose={close}
+        title={
+          <Group>
+            <Image src={"logo.png"} width={"30px"} alt="logo..." />
+            <Text
+              fw={700}
+              style={{
+                letterSpacing: "1.8",
+              }}
+            >
+              Kamptech
+            </Text>
+          </Group>
+        }
+      >
+        <ScrollArea h={`calc(100vh - ${rem(60)})`} mx="-md">
+          <a href="#" className={classes.linked}>
+            Home
+          </a>
+          <UnstyledButton className={classes.linked} onClick={toggleLinks}>
+            <Center inline>
+              <Box component="span" mr={5}>
+                Features
+              </Box>
+              <IconChevronDown size={16} color={theme.fn.primaryColor()} />
+            </Center>
+          </UnstyledButton>
+          <Collapse in={linksOpened}>{drawerLinks}</Collapse>
+          <a href="#" className={classes.linked}>
+            Learn
+          </a>
+          <a href="#" className={classes.linked}>
+            Academy
+          </a>
+        </ScrollArea>
+      </Drawer>
+    </>
   );
 };
 
