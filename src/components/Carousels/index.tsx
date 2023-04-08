@@ -16,22 +16,22 @@ import { IconGauge, IconUser, IconCookie } from "@tabler/icons-react";
 
 const mockdata = [
   {
-    title: "Air Solution",
+    title: "Air Purification",
     description:
-      "Clean air is a basic right. The responsibility to ensure that falls to us.",
-    icon: "windmill.jpg",
+      "Airocide is the most technologically advanced air purifier on the market. Our mission was to make sure that the look complemented the performance. We have won an Edison award for our efforts, and our customers tell us that our air purifiers are a perfect match for the modern home. But, our design is not just meant to look good. It is critical to making sure that our NASA developed technology gets just the right amount of air to be as efficient as possible. This name for this is the Coanda effect.",
+    icon: "airocide.webp",
   },
   {
     title: "Water Solution",
     description:
-      "Conserve water, conserve life. You never know the worth of water until the well runs dry. Save water, and it will save you",
-    icon: "water.jpg",
+      "The STABFOR unit® is not an ordinary drinking water filter –⁠ it is not a filter at all. It is a flow-through device that comprehensively purifies water throughout the entire household and makes it living, clean and healthy without chemicals.",
+    icon: "11024.jpg",
   },
   {
-    title: "IOT Solution",
+    title: "IT Solutions",
     description:
-      "TIf you think that the internet has changed your life, think again. The Internet of Things is about to change it all over again!",
-    icon: "iot.jpg",
+      "MSI has more than 30 years’ of experience in motherboard design & manufacturing, ranked among the world’s top 3 largest motherboard manufacturers, recognized internationally for high quality and stability by clients and individual users.",
+    icon: "msi_it.jpg",
   },
 ];
 
@@ -48,7 +48,8 @@ const useStyles = createStyles((theme) => ({
   description: {
     maxWidth: 600,
     margin: "auto",
-
+    padding:rem(20),
+    textAlign:"center",
     "&::after": {
       content: '""',
       display: "block",
@@ -136,25 +137,67 @@ const FeaturesCards = () => {
   ));
 
   return (
-    <Container size="lg" py="xl">
+    <div className="mt-20 ">
       <Title order={2} className={classes.title} ta="center" mt="sm">
-        Integrate effortlessly with any technology stack
+        Designing products for sustainable future!
       </Title>
 
-      <Text c="dimmed" className={classes.description} ta="center" mt="md">
-        Every once in a while, you’ll see a Golbat that’s missing some fangs.
-        This happens when hunger drives it to try biting a Steel-type Pokémon.
+      <Text c="dimmed" className={classes.description} ta="center" mt="md" >
+      We believe that technology can be a solution to the world's biggest problems and we're working to make it happen.
       </Text>
 
-      <SimpleGrid
+      {/* <SimpleGrid
         cols={3}
         spacing="xl"
         mt={50}
         breakpoints={[{ maxWidth: "sm", cols: 1 }]}
       >
         {features}
-      </SimpleGrid>
-    </Container>
+      </SimpleGrid> */}
+
+      <div className="flex flex-col w-full mt-0">
+
+        <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2  " 
+        id="air_purification">
+          
+          <div className="flex w-full col-span-1 px-5 md:px-0 lg:px-0 xl:px-0">
+            <Image src={"airocide.webp"}  />
+          </div>
+          <div className="flex  flex-col w-full col-span-1 px-5 md:px-20 lg:px-20 xl:px-20">
+          
+            <h1 className="font-bold text-2xl mt-3 md:text-5xl lg:text-5xl xl:text-5xl z-10">Air Purification</h1>
+            <p className="md:mt-10 lg:mt-10 xl:mt-10 mt-2 z-10">Airocide is the most technologically advanced air purifier on the market. Our mission was to make sure that the look complemented the performance. We have won an Edison award for our efforts, and our customers tell us that our air purifiers are a perfect match for the modern home. But, our design is not just meant to look good. It is critical to making sure that our NASA developed technology gets just the right amount of air to be as efficient as possible. This name for this is the Coanda effect.</p>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 py-10 md:py-0 lg:py-0 xl:py-0   " id="water_solutions">
+        <div className=" flex-col w-full col-span-1 px-5 md:px-20 lg:px-20 xl:px-20 hidden md:block lg:block xl:block  z-10 py-10">
+        
+            <h1 className="font-bold text-2xl mt-3 md:text-5xl lg:text-5xl xl:text-5xl  z-10">Water Solutions</h1>
+            <p className="md:mt-10 lg:mt-10 xl:mt-10 mt-2   z-10">The STABFOR unit® is not an ordinary drinking water filter, it is not a filter at all. It is a flow-through device that comprehensively purifies water throughout the entire household and makes it living, clean and healthy without chemicals.</p>
+            
+          </div>
+          <div className="flex w-full col-span-1 px-5 md:px-0 lg:px-0 xl:px-0 bg-[#31AADB]  py-0 md:py-10 lg:py-10 xl:py-10">
+            <Image src={"11024_nobg.png"}  />
+          </div>
+          <div className="flex flex-col w-full col-span-1 px-5 md:px-20 lg:px-20 xl:px-20 md:hidden lg:hidden xl:hidden ">
+          
+            <h1 className="font-bold text-2xl mt-3 md:text-5xl lg:text-5xl xl:text-5xl z-10">Water Solutions</h1>
+            <p className="md:mt-10 lg:mt-10 xl:mt-10 mt-2  z-10">The STABFOR unit® is not an ordinary drinking water filter, it is not a filter at all. It is a flow-through device that comprehensively purifies water throughout the entire household and makes it living, clean and healthy without chemicals.</p>
+            
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 py-10 md:py-0 lg:py-0 xl:py-0  " id="it_solutions">
+          <div className="flex w-full col-span-1 px-5 md:px-0 lg:px-0 xl:px-0 py-0 mix-blend-multiply">
+            <Image src={"msi_it.jpg"}  />
+          </div>
+          <div className="flex flex-col w-full col-span-1 px-5 md:px-20 lg:px-20 xl:px-20 py-0 md:py-10 lg:py-10 xl:py-10">
+            <h1 className="font-bold text-2xl mt-3 md:text-5xl lg:text-5xl xl:text-5xl">IT Solutions</h1>
+            <p className="md:mt-10 lg:mt-10 xl:mt-10 mt-2 ">MSI has more than 30 years’ of experience in motherboard design & manufacturing, ranked among the world’s top 3 largest motherboard manufacturers, recognized internationally for high quality and stability by clients and individual users.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
   );
 };
 

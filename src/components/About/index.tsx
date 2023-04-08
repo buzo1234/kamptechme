@@ -1,7 +1,25 @@
-import { Container, Text, createStyles, rem } from "@mantine/core";
+import { Container, Text, Title, createStyles, rem } from "@mantine/core";
 import React from "react";
 
 const useStyle = createStyles((theme) => ({
+  title: {
+    fontSize: rem(34),
+    fontWeight: 900,
+
+    [theme.fn.smallerThan("sm")]: {
+      fontSize: rem(24),
+    },
+    "&::after": {
+      content: '""',
+      display: "block",
+      width: rem(80),
+      height: rem(2),
+      backgroundColor: theme.fn.primaryColor(),
+      marginLeft: "auto",
+      marginRight: "auto",
+    },
+  },
+  
   root: {
     "&::after": {
       content: '""',
@@ -18,19 +36,31 @@ const useStyle = createStyles((theme) => ({
 const About = () => {
   const { classes } = useStyle();
   return (
-    <div>
-      <Container py={rem(45)}>
-        <Text
-          fz={rem(36)}
+    <div className="" id="about_us">
+      <Container py={rem(45)} >
+        <Title
+          order={2}
           mb={"lg"}
-          className={classes.root}
-          fw={500}
-          align={"center"}
+          mt={"sm"}
+          className={classes.title}
+         
+          ta={"center"}
         >
-          About us
-        </Text>
-        <Text c={"dimmed"} mt={"xl"} fs={"italic"} fz={"sm"}>
-          {` Kamptech Solutions is a company that is on a mission to make the world
+          ABOUT US
+        </Title>
+        
+        <Text  className="text-center text-lg md:text-2xl lg:text-2xl xl:text-2xl ">
+        <Text
+                component="span"
+                inherit
+                variant="gradient"
+                gradient={{ from: "pink", to: "yellow" }}
+
+                className="font-bold"
+              >
+                KampTech Solutions
+              </Text>
+          {`  is a company that is on a mission to make the world
           cleaner and better. We specialize in clean energy, clean air and clean
           water solutions that utilze IoT technology to make them more efficient
           and effective. Our products are designed to improve the quality of our

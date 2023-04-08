@@ -10,7 +10,7 @@ import {
   TypographyStylesProvider,
   rem,
 } from "@mantine/core";
-import { IconGauge, IconUser, IconCookie } from "@tabler/icons-react";
+
 import { Avatar } from "@mantine/core";
 
 const mockData = [
@@ -19,21 +19,21 @@ const mockData = [
     src: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600",
     email: "JohnWick234@gmail.com",
     description:
-      "This dust is actually a powerful poison that will even make a pro wrestler sick, Regice cloaks itself with frigid air of -328 degrees Fahrenheit",
+    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, illo aspernatur, veniam corrupti alias eos officia tempora est harum commodi, earum nulla voluptatem dolores aliquid perspiciatis iusto architecto? Sed, iusto!",
   },
   {
     title: "Shane watson",
     src: "https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&w=600",
     email: "ShaneWatson@gmail.com",
     description:
-      "This dust is actually a powerful poison that will even make a pro wrestler sick, Regice cloaks itself with frigid air of -328 degrees Fahrenheit",
+    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, illo aspernatur, veniam corrupti alias eos officia tempora est harum commodi, earum nulla voluptatem dolores aliquid perspiciatis iusto architecto? Sed, iusto!",
   },
   {
     title: "Lex Luther",
     src: "https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&w=600",
     email: "LexLuther@gmail.com",
     description:
-      "This dust is actually a powerful poison that will even make a pro wrestler sick, Regice cloaks itself with frigid air of -328 degrees Fahrenheit",
+    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, illo aspernatur, veniam corrupti alias eos officia tempora est harum commodi, earum nulla voluptatem dolores aliquid perspiciatis iusto architecto? Sed, iusto!",
   },
 ];
 
@@ -119,9 +119,9 @@ const Banner = () => {
   ));
 
   return (
-    <Container size="lg" py="xl">
+    <Container size="lg" py="xl" mt={"lg"}>
       <Title order={2} className={classes.title} ta="center" mt="sm">
-        WHAT THEY SAY FOR OUR SERVICES
+        WHAT THEY SAY FOR OUR PRODUCTS
       </Title>
 
       <Text c="dimmed" className={classes.description} ta="center" mt="md">

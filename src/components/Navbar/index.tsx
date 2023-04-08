@@ -24,6 +24,7 @@ import { useDisclosure } from "@mantine/hooks";
 import { Drawer } from "@mantine/core";
 import { Icon, IconChevronDown } from "@tabler/icons-react";
 import { theme } from "@/utils/theme";
+import Link from "next/link";
 
 const HEADER_HEIGHT = rem(60);
 
@@ -175,15 +176,19 @@ interface HeaderResponsiveProps {
   }[];
 }
 
+
+
 const Navbar = ({ links }: HeaderResponsiveProps) => {
   const [opened, { toggle, close }] = useDisclosure(false);
   const [active, setActive] = useState(links[0].link);
   const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
   const { classes, cx, theme } = useStyles();
 
+ 
   const drawerLinks = links[1].links?.map((item, index) => {
     return (
       <UnstyledButton key={item.label} className={classes.collapse}>
+        <Link href={item.link} scroll={false} onClick={toggle}>
         <Group noWrap align="flex-start">
           <ThemeIcon size={24} variant="default" radius="md">
             <item.icon size={rem(22)} color={theme.fn.primaryColor()} />
@@ -194,6 +199,7 @@ const Navbar = ({ links }: HeaderResponsiveProps) => {
             </Text>
           </div>
         </Group>
+        </Link>
       </UnstyledButton>
     );
   });
@@ -208,6 +214,7 @@ const Navbar = ({ links }: HeaderResponsiveProps) => {
           <Menu.Dropdown>
             {link.links.map((item, index) => {
               return (
+                
                 <Menu.Item
                   className={classes.item}
                   component={"a"}
@@ -216,6 +223,7 @@ const Navbar = ({ links }: HeaderResponsiveProps) => {
                     <item.icon className={classes.iconActive} stroke={"1.5"} />
                   }
                   href={item.link}
+                  
                 >
                   {item.label}
                 </Menu.Item>
@@ -226,28 +234,31 @@ const Navbar = ({ links }: HeaderResponsiveProps) => {
       );
     }
     return (
-      <a
-        key={link.label}
+      <Link
+        //key={link.label}
         href={link.link}
+        scroll={false}
         className={cx(classes.link, {
           [classes.linkActive]: active === link.link,
         })}
-        onClick={(event) => {
+        /* onClick={(event) => {
           event.preventDefault();
           setActive(link.link);
           close();
-        }}
+        }} */
       >
         {link.label}
-      </a>
+      </Link>
     );
   });
 
   return (
-    <>
+    <div className="sticky top-0 left-0 z-20">
       <Header height={HEADER_HEIGHT} className={classes.root}>
         <Container className={classes.header}>
-          <Group>
+          <Link href={"/"}>
+          
+          <Group className="cursor-pointer">
             <Image src={"logo.png"} width={"30px"} alt="logo..." />
             <Text
               fw={700}
@@ -258,6 +269,7 @@ const Navbar = ({ links }: HeaderResponsiveProps) => {
               Kamptech
             </Text>
           </Group>
+          </Link>
           <Group spacing={5} className={classes.links}>
             {items}
           </Group>
@@ -291,27 +303,27 @@ const Navbar = ({ links }: HeaderResponsiveProps) => {
         }
       >
         <ScrollArea h={`calc(100vh - ${rem(60)})`} mx="-md">
-          <a href="#" className={classes.linked}>
+          <Link href={"#home"} className={classes.linked} scroll={false} onClick={toggle}>
             Home
-          </a>
+          </Link>
           <UnstyledButton className={classes.linked} onClick={toggleLinks}>
             <Center inline>
               <Box component="span" mr={5}>
-                Features
+                Products
               </Box>
               <IconChevronDown size={16} color={theme.fn.primaryColor()} />
             </Center>
           </UnstyledButton>
           <Collapse in={linksOpened}>{drawerLinks}</Collapse>
-          <a href="#" className={classes.linked}>
-            Learn
-          </a>
-          <a href="#" className={classes.linked}>
-            Academy
-          </a>
+          <Link href={"#about_us"} className={classes.linked} scroll={false} onClick={toggle}>
+            About Us
+          </Link>
+          <Link href={"#contact_us"} className={classes.linked} scroll={false} onClick={toggle}>
+            Contact Us
+          </Link>
         </ScrollArea>
       </Drawer>
-    </>
+    </div>
   );
 };
 

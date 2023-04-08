@@ -6,6 +6,7 @@ import {
   Button,
   rem,
 } from "@mantine/core";
+import Link from "next/link";
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -88,7 +89,7 @@ export function HeroImageRight() {
         <div className={classes.inner}>
           <div className={classes.content}>
             <Title className={classes.title}>
-              A{" "}
+              Designing{" "}
               <Text
                 component="span"
                 inherit
@@ -97,22 +98,17 @@ export function HeroImageRight() {
               >
                 fully Sustainable
               </Text>{" "}
-              Renewable Energy
+              Products for Future!
             </Title>
 
             <Text className={classes.description} mt={30}>
-              For your better tomorrow, save energy today.
+              For your better tomorrow, We need to Innovate today!.
             </Text>
 
-            <Button
-              variant="gradient"
-              gradient={{ from: "pink", to: "yellow" }}
-              size="xl"
-              className={classes.control}
-              mt={40}
-            >
-              Get started
-            </Button>
+              <Link href={"#get_started"}scroll={false} >
+              
+              <button className="bg-gradient-to-r from-pink-500 to-yellow-500 mt-10 px-10 py-3 rounded-md text-2xl font-bold text-white">Get started</button>
+             </Link>
           </div>
         </div>
       </Container>

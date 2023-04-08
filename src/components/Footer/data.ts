@@ -2,28 +2,21 @@ import { FooterLinksProps } from ".";
 
 export const data: FooterLinksProps = {
   data: [
-    {
+   /*  {
       title: "About",
       links: [
         {
-          label: "Features",
+          label: "About Us",
           link: "#",
         },
         {
-          label: "Pricing",
+          label: "Products",
           link: "#",
         },
-        {
-          label: "Support",
-          link: "#",
-        },
-        {
-          label: "Forums",
-          link: "#",
-        },
+        
       ],
-    },
-    {
+    }, */
+    /* {
       title: "Project",
       links: [
         {
@@ -64,6 +57,6 @@ export const data: FooterLinksProps = {
           link: "#",
         },
       ],
-    },
+    }, */
   ],
 };

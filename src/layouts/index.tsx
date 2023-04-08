@@ -1,6 +1,6 @@
 import { Navbar, Footer } from "@/components";
 import { data } from "@/components/Footer/data";
-import { IconDropletFilled, IconBuildingCarousel } from "@tabler/icons-react";
+import { IconDropletFilled, IconBuildingCarousel,IconCpu  } from "@tabler/icons-react";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -8,31 +8,36 @@ type LayoutProps = {
 const navData = {
   links: [
     {
-      link: "/",
+      link: "#home",
       label: "Home",
     },
     {
-      link: "/pricing",
+      link: "/",
       label: "Products",
       links: [
         {
-          link: "/air",
+          link: "#air_purification",
           icon: IconBuildingCarousel,
-          label: "Air solution",
+          label: "Air Purification",
         },
         {
-          link: "/water",
+          link: "#water_solutions",
           icon: IconDropletFilled,
-          label: "Water Solution",
+          label: "Water Solutions",
+        },
+        {
+          link: "#it_solutions",
+          icon: IconCpu,
+          label: "IT Solutions",
         },
       ],
     },
     {
-      link: "/about",
+      link: "#about_us",
       label: "About us",
     },
     {
-      link: "/contact",
+      link: "#contact_us",
       label: "Contact us",
     },
   ],
@@ -41,7 +46,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <Navbar links={navData.links} />
-      <main>{children}</main>
+      <main id="home">{children}</main>
       <Footer data={data.data} />
     </>
   );

@@ -12,6 +12,7 @@ import {
   IconBrandYoutube,
   IconBrandInstagram,
 } from "@tabler/icons-react";
+import Link from "next/link";
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -161,7 +162,7 @@ const Footer = ({ data }: FooterLinksProps) => {
             </Text>
           </Group>
           <Text size="xs" color="dimmed" className={classes.description}>
-            Build fully functional accessible web applications faster than ever
+            Designing technology for sustainable future!
           </Text>
         </div>
         <div className={classes.groups}>{groups}</div>
@@ -172,14 +173,17 @@ const Footer = ({ data }: FooterLinksProps) => {
         </Text>
 
         <Group spacing={0} className={classes.social} position="right" noWrap>
-          <ActionIcon size="lg">
+          {/* <ActionIcon size="lg">
             <IconBrandTwitter size="1.05rem" stroke={1.5} />
           </ActionIcon>
           <ActionIcon size="lg">
             <IconBrandYoutube size="1.05rem" stroke={1.5} />
-          </ActionIcon>
+          </ActionIcon> */}
           <ActionIcon size="lg">
+            <Link href="https://www.instagram.com/kamptech11/">
+            
             <IconBrandInstagram size="1.05rem" stroke={1.5} />
+            </Link>
           </ActionIcon>
         </Group>
       </Container>

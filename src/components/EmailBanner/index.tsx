@@ -16,6 +16,7 @@ import {
   IconBrandInstagram,
 } from "@tabler/icons-react";
 import { ContactIconsList } from "../ContactIcons/ContactIcons";
+import Link from "next/link";
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -81,7 +82,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-const social = [IconBrandTwitter, IconBrandYoutube, IconBrandInstagram];
+const social = [IconBrandInstagram];
 
 const EmailBanner = () => {
   const { classes } = useStyles();
@@ -92,13 +93,17 @@ const EmailBanner = () => {
       size={28}
       className={classes.social}
       variant="transparent"
+      
     >
+      <Link href="https://www.instagram.com/kamptech11/">
+      
       <Icon size="1.4rem" stroke={1.5} />
+      </Link>
     </ActionIcon>
   ));
 
   return (
-    <div className={classes.wrapper}>
+    <div className={classes.wrapper} id="contact_us">
       <SimpleGrid
         cols={2}
         spacing={50}
@@ -117,27 +122,28 @@ const EmailBanner = () => {
         <div className={classes.form}>
           <TextInput
             label="Email"
-            placeholder="your@email.com"
+            placeholder="Your email address"
             required
             classNames={{ input: classes.input, label: classes.inputLabel }}
           />
           <TextInput
             label="Name"
-            placeholder="John Doe"
+            placeholder="Your Full Name"
             mt="md"
             classNames={{ input: classes.input, label: classes.inputLabel }}
           />
           <Textarea
             required
             label="Your message"
-            placeholder="I want to order your goods"
+            placeholder="Leave us a message :)"
             minRows={4}
             mt="md"
             classNames={{ input: classes.input, label: classes.inputLabel }}
           />
 
           <Group position="right" mt="md">
-            <Button className={classes.control}>Send message</Button>
+            {/* <Button className={classes.control}>Send message</Button> */}
+            <button className="text-white font-semibold text-sm px-3 py-2 rounded-md bg-blue-600">Send message</button>
           </Group>
         </div>
       </SimpleGrid>

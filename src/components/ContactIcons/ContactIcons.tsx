@@ -81,9 +81,9 @@ interface ContactIconsListProps {
 }
 
 const MOCKDATA = [
-  { title: "Email", description: "hello@mantine.dev", icon: IconAt },
-  { title: "Phone", description: "+49 (800) 335 35 35", icon: IconPhone },
-  { title: "Address", description: "844 Morris Park avenue", icon: IconMapPin },
+  { title: "Email", description: "pathanm@kamptechme.com", icon: IconAt },
+  { title: "Phone", description: "+971 564430949", icon: IconPhone },
+  { title: "Address", description: "Office No: 301-23, Al Masaood Tower, Al Maktoum Road, Deira PO Box 390040 - Dubai", icon: IconMapPin },
   { title: "Working hours", description: "8 a.m. – 11 p.m.", icon: IconSun },
 ];
 
