@@ -139,7 +139,7 @@ const Navbar = ({ links }: HeaderResponsiveProps) => {
   const items = links.map((link) => {
     if (link.links) {
       return (
-        <Menu trigger={"hover"}>
+        <Menu trigger={"hover"} key={link.label}>
           <Menu.Target>
             <Button className={classes.btn}>{link.label}</Button>
           </Menu.Target>
@@ -149,6 +149,7 @@ const Navbar = ({ links }: HeaderResponsiveProps) => {
                 <Menu.Item
                   className={classes.item}
                   component={"a"}
+                  key={item.label}
                   icon={
                     <item.icon className={classes.iconActive} stroke={"1.5"} />
                   }
