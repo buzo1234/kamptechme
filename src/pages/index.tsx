@@ -8,6 +8,7 @@ import EmailBanner from "@/components/EmailBanner";
 import Crousels from "@/components/Carousels";
 import LogosBanner from "@/components/LogosBanner";
 import About from "@/components/About";
+import MapBoxComp from "@/components/MapBox";
 
 
 const inter = Poppins({
@@ -16,7 +17,7 @@ const inter = Poppins({
 });
 
 export default function Home() {
-  if(typeof window !== "undefined"){
+ 
     return (
       <div className="scroll-smooth">
         <Head>
@@ -34,18 +35,12 @@ export default function Home() {
           
           
           <EmailBanner />
-         
+          <MapBoxComp/>
           
         </main>
       </div>
     );
-  }
-  else{
-    return (
-      <div className="text-2xl font-bold flex w-full h-screen items-center justify-center">
-        Loading...
-      </div>
-    )
-  }
+ 
+  
   
 }
