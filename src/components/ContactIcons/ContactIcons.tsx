@@ -8,6 +8,7 @@ import {
 } from "@mantine/core";
 import { IconSun, IconPhone, IconMapPin, IconAt } from "@tabler/icons-react";
 
+
 type ContactIconVariant = "white" | "gradient";
 
 interface ContactIconStyles {

@@ -9,30 +9,43 @@ import Crousels from "@/components/Carousels";
 import LogosBanner from "@/components/LogosBanner";
 import About from "@/components/About";
 
+
 const inter = Poppins({
   subsets: ["latin"],
   weight: ["300"],
 });
 
 export default function Home() {
-  return (
-    <div className="scroll-smooth">
-      <Head>
-        <title>Kamptech</title>
-        <meta name="description" content="Industry leading company with products for sustainable future" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logo.png" />
-      </Head>
-      <main>
-        <HeroImageRight />
-        <LogosBanner />
-        <Crousels />
-
-        <About />
-        
-        
-        <EmailBanner />
-      </main>
-    </div>
-  );
+  if(typeof window !== "undefined"){
+    return (
+      <div className="scroll-smooth">
+        <Head>
+          <title>Kamptech</title>
+          <meta name="description" content="Industry leading company with products for sustainable future" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link rel="icon" href="/logo.png" />
+        </Head>
+        <main>
+          <HeroImageRight />
+          <LogosBanner />
+          <Crousels />
+  
+          <About />
+          
+          
+          <EmailBanner />
+         
+          
+        </main>
+      </div>
+    );
+  }
+  else{
+    return (
+      <div className="text-2xl font-bold flex w-full h-screen items-center justify-center">
+        Loading...
+      </div>
+    )
+  }
+  
 }
