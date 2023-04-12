@@ -173,8 +173,49 @@ const FeaturesCards = () => {
       >
         {features}
       </SimpleGrid> */}
+      <div
+          className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 py-10 md:py-0 lg:py-0 xl:py-0 h-fit px-4 '
+          id='it_solutions'
+        >
+          <div className='flex w-full items-center col-span-1 px-5 md:px-0 lg:px-0 xl:px-0 py-0 mix-blend-multiply ' style={{backgroundImage:"url(msi_bd.png)", backgroundSize:"contain", backgroundRepeat:"no-repeat", backgroundPosition:"center"}}>
+            
+            
+          <Carousel showStatus={false} showArrows={false} autoPlay={true} infiniteLoop={true}  showThumbs={false} className=' z-10 flex w-full items-center justify-center'>
+                <div className="">
+                    <img src="msi_1.png"  alt="image1" className="h-[550px] object-contain object-center"/>
+                </div>
+                <div>
+                    <img src="msi_22.png" className="h-[550px] object-contain object-center" />
+                </div>
+                <div>
+                    <img src="msi_3.png" className="h-[550px] object-contain object-center" />
+                </div>
+            </Carousel>
+          </div>
+          <div className='flex flex-col w-full col-span-1 px-5 md:px-20 lg:px-20 xl:px-20 py-0 md:py-10 lg:py-10 xl:py-10 justify-between'>
+            <div>
+
+           
+            <h1 className='font-bold text-2xl mt-3 md:text-5xl lg:text-5xl xl:text-5xl'>
+              Gaming Gear
+            </h1>
+            <p className='md:mt-10 lg:mt-10 xl:mt-10 mt-2 '>
+              MSI has more than 30 years`&apos; of experience in motherboard
+              design & manufacturing, ranked among the world`&apos;s top 3
+              largest motherboard manufacturers, recognized internationally for
+              high quality and stability by clients and individual users.
+            </p>
+            </div>
+            <div className='flex w-full justify-end'>
+              <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl'>
+                Learn more <IconArrowRight />
+              </button>
+            </div>
+          </div>
+        </div>
 
       <div className='flex flex-col w-full mt-5' id='air_purification'>
+
         <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2  '>
           <div className='flex w-full col-span-1 px-5 md:px-0 lg:px-0 xl:px-0'>
             <Image src={'airocide.webp'} />
@@ -248,34 +289,7 @@ const FeaturesCards = () => {
             </div>
           </div>
         </div>
-        <div
-          className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 py-10 md:py-0 lg:py-0 xl:py-0  '
-          id='it_solutions'
-        >
-          <div className='flex w-full col-span-1 px-5 md:px-0 lg:px-0 xl:px-0 py-0 mix-blend-multiply'>
-            <Image src={'msi_it.jpg'} />
-          </div>
-          <div className='flex flex-col w-full col-span-1 px-5 md:px-20 lg:px-20 xl:px-20 py-0 md:py-10 lg:py-10 xl:py-10 justify-between'>
-            <div>
-
-           
-            <h1 className='font-bold text-2xl mt-3 md:text-5xl lg:text-5xl xl:text-5xl'>
-              IT Solutions
-            </h1>
-            <p className='md:mt-10 lg:mt-10 xl:mt-10 mt-2 '>
-              MSI has more than 30 years`&apos; of experience in motherboard
-              design & manufacturing, ranked among the world`&apos;s top 3
-              largest motherboard manufacturers, recognized internationally for
-              high quality and stability by clients and individual users.
-            </p>
-            </div>
-            <div className='flex w-full justify-end'>
-              <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl'>
-                Learn more <IconArrowRight />
-              </button>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
   );
