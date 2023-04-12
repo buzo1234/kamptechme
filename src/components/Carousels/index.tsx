@@ -53,7 +53,9 @@ const useStyles = createStyles((theme) => ({
   description: {
     maxWidth: 600,
     margin: 'auto',
-    padding: rem(20),
+    paddingBottom: rem(20),
+    paddingRight:rem(20),
+    paddingLeft:rem(20),
     textAlign: 'center',
   },
 
@@ -137,7 +139,7 @@ const FeaturesCards = () => {
         Designing products for sustainable future!
       </Title>
 
-      <Text c='dimmed' className={classes.description} ta='center' mt='md'>
+      <Text c='dimmed' className={classes.description} ta='center' mt='sm'>
         We believe that technology can be a solution to the world&apos;s biggest
         problems and we&apos;re working to make it happen.
       </Text>
@@ -151,7 +153,7 @@ const FeaturesCards = () => {
         {features}
       </SimpleGrid> */}
 
-      <div className='flex flex-col w-full mt-0' id='air_purification'>
+      <div className='flex flex-col w-full mt-5' id='air_purification'>
         <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2  '>
           <div className='flex w-full col-span-1 px-5 md:px-0 lg:px-0 xl:px-0'>
             <Image src={'airocide.webp'} />

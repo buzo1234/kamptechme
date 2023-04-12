@@ -29,7 +29,7 @@ const LogosBanner = () => {
   const { classes, theme } = useStyle();
 
   return (
-    <div className="flex max-w-6xl mx-auto" id="get_started">
+    <div className="flex max-w-6xl mx-auto mt-20" id="get_started">
       <div className="flex w-full flex-col">
         <Text align="center" size={rem(25)} fw={"bold"} mt={rem(50)} mb={"lg"}>
           OUR PARTNERS

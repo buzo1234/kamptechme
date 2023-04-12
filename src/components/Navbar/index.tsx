@@ -254,7 +254,7 @@ const Navbar = ({ links }: HeaderResponsiveProps) => {
   });
 
   return (
-    <div className="sticky top-0 left-0 z-20">
+    <div className="sticky top-0 left-0 z-50">
       <Header height={HEADER_HEIGHT} className={classes.root}>
         <Container className={classes.header}>
           <Link href={"/"}>

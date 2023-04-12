@@ -8,21 +8,35 @@ import {
 } from "@mantine/core";
 import Link from "next/link";
 
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import Image from "next/image";
+
 const useStyles = createStyles((theme) => ({
   root: {
     
-    backgroundColor: "#11284b",
+    //backgroundColor: "#11284b",
     backgroundSize: "cover",
     backgroundPosition: "center",
-    backgroundImage:
-      "linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 70%), url(background.jpg)",
+    
+    /* background:
+      "linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 98%)", */
     paddingTop: `calc(${theme.spacing.xl} * 4)`,
     paddingBottom: `calc(${theme.spacing.xl} *4)`,
+    display:"relative",
+
+    [theme.fn.smallerThan("md")]: {
+      paddingTop: 0,
+      paddingBottom:`calc(${theme.spacing.xl} *1)`,
+    },
+    
   },
 
   inner: {
     display: "flex",
     justifyContent: "space-between",
+    pointerEvents:"none",
+  
 
     [theme.fn.smallerThan("md")]: {
       flexDirection: "column",
@@ -76,18 +90,50 @@ const useStyles = createStyles((theme) => ({
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
     fontSize: rem(22),
 
-    [theme.fn.smallerThan("md")]: {
+    [theme.fn.smallerThan("sm")]: {
       width: "100%",
     },
   },
+
+  backshade:{
+    background:"linear-gradient(250deg, rgba(130, 201, 30, 0) 0%,  #000000  98%)",
+    pointerEvents:"none",
+    position:"absolute",
+    top:0,
+    zIndex:-10,
+    width:"100%",
+    height:"100%",
+    left:0,
+    [theme.fn.smallerThan("sm")]: {
+      background: "#000000",
+    },
+  }
 }));
 
 export function HeroImageRight() {
   const { classes } = useStyles();
   return (
-    <div className={classes.root}>
-      <Container size="lg">
-        <div className={classes.inner}>
+    <div className={classes.root} style={{pointerEvents:"none"}}>
+
+      <div className={classes.backshade} >
+
+      </div>
+
+      <div style={{pointerEvents:"all"}}>
+
+      
+      <Carousel showStatus={false} showArrows={false} autoPlay={true} infiniteLoop={true} className="md:absolute lg:absolute xl:absolute left-0 top-0 bottom-0 right-0 -z-20 flex-col flex h-fit pt-0  md:pt-14 lg:pt-14 xl:pt-14 " showThumbs={false}>
+                <div className="z-10">
+                    <img src="msi_bg.jpg"  alt="image1" className=" object-cover object-center"/>
+                </div>
+                <div>
+                    <img src="airocide_bg.jpg" className=" object-cover object-center" />
+                </div>
+                
+            </Carousel>
+      </div>
+      <Container size="lg"  >
+        <div className={classes.inner }>
           <div className={classes.content}>
             <Title className={classes.title}>
               Designing{" "}
@@ -108,7 +154,7 @@ export function HeroImageRight() {
 
               <Link href={"#get_started"}scroll={false} >
               
-              <button className="bg-gradient-to-r from-pink-500 to-yellow-500 mt-10 px-10 py-3 rounded-md text-2xl font-bold text-white">Get started</button>
+              <button className="bg-gradient-to-r from-pink-500 to-yellow-500 mt-10 px-10 py-3 rounded-md text-2xl font-bold text-white cursor-pointer" style={{pointerEvents:"all"}}>Get started</button>
              </Link>
           </div>
         </div>
