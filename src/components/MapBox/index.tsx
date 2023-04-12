@@ -21,14 +21,14 @@ const MapBoxComp = () => {
         // otherwise, create a map instance
     var mapboxMap = new mapboxgl.Map({
       container: node,
-            accessToken: "pk.eyJ1Ijoia2lubnlidXpvIiwiYSI6ImNsZ2R1azJtMDAyazQzZW84bGkzemQzY3QifQ.tkqfYGUFKiplmbQNgyBJPw",
+            accessToken: "pk.eyJ1Ijoia2lubnlidXpvIiwiYSI6ImNsZ2RzaTQwZDBvY3QzZnA4dXdsd2g3djkifQ.Fjv_5plbOmFi_3-NLr2_jg",
             style: "mapbox://styles/mapbox/streets-v11",
       center: [55.32423381087544, 25.259052426409283 ],
       zoom: 12,
     });
 
   
-    mapboxMap.on('load' , () => {
+    mapboxMap && mapboxMap.on('load' , () => {
         new mapboxgl.Marker({
             anchor:"top",
             scale:1.2,
