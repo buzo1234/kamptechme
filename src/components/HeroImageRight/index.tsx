@@ -18,7 +18,7 @@ const useStyles = createStyles((theme) => ({
     //backgroundColor: "#11284b",
     backgroundSize: "cover",
     backgroundPosition: "center",
-    
+    height:"100%",
     /* background:
       "linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 98%)", */
     paddingTop: `calc(${theme.spacing.xl} * 4)`,
@@ -131,9 +131,9 @@ export function HeroImageRight() {
       <div style={{pointerEvents:"all"}}>
 
       
-      <Carousel showStatus={false} showArrows={false} autoPlay={true} infiniteLoop={true} className="md:absolute lg:absolute xl:absolute left-0 top-0 bottom-0 right-0 -z-20 flex-col flex h-fit pt-0  md:pt-14 lg:pt-14 xl:pt-14 " showThumbs={false}>
+      <Carousel showStatus={false} showArrows={false} autoPlay={true} infiniteLoop={true} className="md:absolute lg:absolute xl:absolute left-0 top-0 bottom-0 right-0 -z-20 flex-col flex max-h-[750px] pt-0  md:pt-14 lg:pt-14 xl:pt-14 " showThumbs={false}>
                 <div className="z-10">
-                    <img src="msi_bg.jpg"  alt="image1" className=" object-cover object-center"/>
+                    <img src="msi_bg.jpg"  alt="image1" className="h-full object-cover object-center"/>
                 </div>
                 <div>
                     <img src="airocide_bg.jpg" className=" object-cover object-center" />
