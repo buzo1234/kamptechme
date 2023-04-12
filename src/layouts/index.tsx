@@ -1,6 +1,6 @@
 import { Navbar, Footer } from "@/components";
 import { data } from "@/components/Footer/data";
-import { IconDropletFilled, IconBuildingCarousel,IconCpu  } from "@tabler/icons-react";
+import { IconDropletFilled, IconBuildingCarousel,IconCpu, IconAffiliate  } from "@tabler/icons-react";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -16,20 +16,27 @@ const navData = {
       label: "Products",
       links: [
         {
+          link: "#it_solutions",
+          icon: IconCpu,
+          label: "Gaming Gear",
+        },
+        {
           link: "#air_purification",
           icon: IconBuildingCarousel,
           label: "Air Purification",
+        },
+        {
+          link: "#iot_solutions",
+          icon: IconAffiliate,
+          label: "IOT Solutions",
         },
         {
           link: "#water_solutions",
           icon: IconDropletFilled,
           label: "Water Solutions",
         },
-        {
-          link: "#it_solutions",
-          icon: IconCpu,
-          label: "IT Solutions",
-        },
+        
+        
       ],
     },
     {

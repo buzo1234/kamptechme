@@ -286,7 +286,7 @@ const FeaturesCards = () => {
 
         <div
           className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 py-10 md:py-0 lg:py-0 xl:py-0 h-fit px-4 '
-          id='it_solutions'
+          id='iot_solutions'
         >
           <div className='flex w-full items-center col-span-1 px-5 md:px-0 lg:px-0 xl:px-0 py-0 mix-blend-multiply ' style={{backgroundImage:"url(iot_bd.png)", backgroundSize:"contain", backgroundRepeat:"no-repeat", backgroundPosition:"center"}}>
             
@@ -322,7 +322,7 @@ const FeaturesCards = () => {
         <br/>
         <div
           className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 py-10 md:py-0 lg:py-0 xl:py-0 h-fit  '
-          id='air_purification'
+          id='water_solutions'
         >
           <div className=' flex-col w-full  col-span-1 px-5 md:px-20 lg:px-20 xl:px-20 hidden md:flex lg:flex xl:flex  z-10 py-10 justify-between '>
             <div>
