@@ -330,7 +330,7 @@ const FeaturesCards = () => {
               Water Solutions
               </h1>
               <p className='md:mt-10 lg:mt-10 xl:mt-10 mt-2   z-10'>
-              The STABFOR® device restores the water to its "original rawness," pure flavor, and mountain spring perfume through the synergistic action of many types of particles and energy in the water. The STABFOR® unit is designed to treat the complete water supply system in a condominium, single-family home, inn, hotel, industrial facility, etc. The device is mounted on the building's or a portion of it's inlet from the public or private distribution system, guaranteeing that the whole building's water system is treated. It produces free hydrogen H- and electrified water. It cleanses the water of microbes and harmonises the energy present. 
+              The STABFOR® device restores the water to its &quot;original rawness,&quot; pure flavor, and mountain spring perfume through the synergistic action of many types of particles and energy in the water. The STABFOR® unit is designed to treat the complete water supply system in a condominium, single-family home, inn, hotel, industrial facility, etc. The device is mounted on the building&quot;s or a portion of it&quot;s inlet from the public or private distribution system, guaranteeing that the whole building&quot;s water system is treated. It produces free hydrogen H- and electrified water. It cleanses the water of microbes and harmonises the energy present. 
 
               </p>
             </div>
@@ -359,7 +359,7 @@ const FeaturesCards = () => {
               Water Solutions
               </h1>
               <p className='md:mt-10 lg:mt-10 xl:mt-10 mt-2  z-10'>
-              The STABFOR® device restores the water to its "original rawness," pure flavor, and mountain spring perfume through the synergistic action of many types of particles and energy in the water. The STABFOR® unit is designed to treat the complete water supply system in a condominium, single-family home, inn, hotel, industrial facility, etc. The device is mounted on the building's or a portion of it's inlet from the public or private distribution system, guaranteeing that the whole building's water system is treated. It produces free hydrogen H- and electrified water. It cleanses the water of microbes and harmonises the energy present. 
+              The STABFOR® device restores the water to its &quot;original rawness,&quot; pure flavor, and mountain spring perfume through the synergistic action of many types of particles and energy in the water. The STABFOR® unit is designed to treat the complete water supply system in a condominium, single-family home, inn, hotel, industrial facility, etc. The device is mounted on the building&quot;s or a portion of it&quot;s inlet from the public or private distribution system, guaranteeing that the whole building&quot;s water system is treated. It produces free hydrogen H- and electrified water. It cleanses the water of microbes and harmonises the energy present. 
 
               </p>
             </div>
