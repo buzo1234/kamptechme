@@ -72,6 +72,10 @@ const About = () => {
           happen.`}
         </Text>
       </Container>
+
+      <br/>
+      <br/>
+      <br/>
     </div>
   );
 };

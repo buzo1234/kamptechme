@@ -17,6 +17,7 @@ import {
   IconUser,
   IconCookie,
   IconArrowRight,
+  IconShoppingCart
 } from '@tabler/icons-react';
 
 
@@ -180,7 +181,7 @@ const FeaturesCards = () => {
           <div className='flex w-full items-center col-span-1 px-5 md:px-0 lg:px-0 xl:px-0 py-0 mix-blend-multiply ' style={{backgroundImage:"url(msi_bd.png)", backgroundSize:"contain", backgroundRepeat:"no-repeat", backgroundPosition:"center"}}>
             
             
-          <Carousel showStatus={false} showArrows={false} autoPlay={true} infiniteLoop={true}  showThumbs={false} className=' z-10 flex w-full items-center justify-center'>
+          <Carousel emulateTouch={false} swipeable={false} showStatus={false} showArrows={false} autoPlay={true} infiniteLoop={true}  showThumbs={false} className=' z-10 flex w-full items-center justify-center'>
                 <div className="">
                     <img src="msi_1.png"  alt="image1" className="h-[550px] object-contain object-center"/>
                 </div>
@@ -189,6 +190,9 @@ const FeaturesCards = () => {
                 </div>
                 <div>
                     <img src="msi_3.png" className="h-[550px] object-contain object-center" />
+                </div>
+                <div>
+                    <img src="msi_4.png" className="h-[550px] object-contain object-center" />
                 </div>
             </Carousel>
           </div>
@@ -200,7 +204,7 @@ const FeaturesCards = () => {
               Gaming Gear
             </h1>
             <p className='md:mt-10 lg:mt-10 xl:mt-10 mt-2 '>
-              MSI has more than 30 years`&apos; of experience in motherboard
+              MSI has more than 30 years&apos; of experience in motherboard
               design & manufacturing, ranked among the world`&apos;s top 3
               largest motherboard manufacturers, recognized internationally for
               high quality and stability by clients and individual users.
@@ -208,25 +212,23 @@ const FeaturesCards = () => {
             </div>
             <div className='flex w-full justify-end'>
               <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl'>
-                Learn more <IconArrowRight />
+                Shop Now <IconShoppingCart />
               </button>
             </div>
           </div>
         </div>
-
-      <div className='flex flex-col w-full mt-5' id='air_purification'>
-
-        <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2  '>
-          <div className='flex w-full col-span-1 px-5 md:px-0 lg:px-0 xl:px-0'>
-            <Image src={'airocide.webp'} />
-          </div>
-          <div className='flex  flex-col w-full col-span-1 px-5 md:px-20 lg:px-20 xl:px-20 justify-between'>
+        <br/>
+        <div
+          className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 py-10 md:py-0 lg:py-0 xl:py-0 h-fit  '
+          id='air_purification'
+        >
+          <div className=' flex-col w-full  col-span-1 px-5 md:px-20 lg:px-20 xl:px-20 hidden md:flex lg:flex xl:flex  z-10 py-10 justify-between '>
             <div>
-              <h1 className='font-bold text-2xl mt-3 md:text-5xl lg:text-5xl xl:text-5xl z-10'>
-                Air Purification
+              <h1 className='font-bold text-2xl mt-3 md:text-5xl lg:text-5xl xl:text-5xl  z-10'>
+              Air Purification
               </h1>
-              <p className='md:mt-10 lg:mt-10 xl:mt-10 mt-2 z-10'>
-                Airocide is the most technologically advanced air purifier on
+              <p className='md:mt-10 lg:mt-10 xl:mt-10 mt-2   z-10'>
+              Airocide is the most technologically advanced air purifier on
                 the market. Our mission was to make sure that the look
                 complemented the performance. We have won an Edison award for
                 our efforts, and our customers tell us that our air purifiers
@@ -237,61 +239,141 @@ const FeaturesCards = () => {
                 effect.
               </p>
             </div>
-
             <div className='flex w-full justify-end'>
             <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl'>
-                Learn more <IconArrowRight />
+                Shop Now <IconShoppingCart />
               </button>
             </div>
           </div>
-        </div>
-        <div
-          className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 py-10 md:py-0 lg:py-0 xl:py-0   '
-          id='water_solutions'
-        >
-          <div className=' flex-col w-full  col-span-1 px-5 md:px-20 lg:px-20 xl:px-20 hidden md:flex lg:flex xl:flex  z-10 py-10 justify-between '>
-            <div>
-              <h1 className='font-bold text-2xl mt-3 md:text-5xl lg:text-5xl xl:text-5xl  z-10'>
-                Water Solutions
-              </h1>
-              <p className='md:mt-10 lg:mt-10 xl:mt-10 mt-2   z-10'>
-                The STABFOR unit® is not an ordinary drinking water filter, it
-                is not a filter at all. It is a flow-through device that
-                comprehensively purifies water throughout the entire household
-                and makes it living, clean and healthy without chemicals.
-              </p>
-            </div>
-            <div className='flex w-full justify-end'>
-            <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl'>
-                Learn more <IconArrowRight />
-              </button>
-            </div>
-          </div>
-          <div className='flex w-full col-span-1 px-5 md:px-0 lg:px-0 xl:px-0 bg-[#31AADB]  py-0 md:py-10 lg:py-10 xl:py-10'>
-            <Image src={'11024_nobg.png'} />
+          <div className='flex w-full items-center col-span-1 px-5 md:px-0 lg:px-0 xl:px-0 py-0 mix-blend-multiply ' style={{background:"url(air_bd.png)", backgroundSize:"contain", backgroundRepeat:"no-repeat", backgroundPosition:"center"}}>
+            
+            
+          <Carousel emulateTouch={false} swipeable={false} showStatus={false} showArrows={false} autoPlay={true} infiniteLoop={true}  showThumbs={false} className=' z-10 flex w-full items-center justify-center'>
+                <div className="">
+                    <img src="airocide_1.png"  alt="image1" className="h-[550px] object-contain object-center"/>
+                </div>
+                <div>
+                    <img src="airocide_2.webp" className="h-[550px] object-contain object-center" />
+                </div>
+                
+            </Carousel>
           </div>
           <div className='flex flex-col w-full col-span-1 px-5 md:px-20 lg:px-20 xl:px-20 md:hidden lg:hidden xl:hidden  justify-between'>
             <div>
               <h1 className='font-bold text-2xl mt-3 md:text-5xl lg:text-5xl xl:text-5xl z-10'>
-                Water Solutions
+              Air Purification
               </h1>
               <p className='md:mt-10 lg:mt-10 xl:mt-10 mt-2  z-10'>
-                The STABFOR unit® is not an ordinary drinking water filter, it
-                is not a filter at all. It is a flow-through device that
-                comprehensively purifies water throughout the entire household
-                and makes it living, clean and healthy without chemicals.
+              Airocide is the most technologically advanced air purifier on
+                the market. Our mission was to make sure that the look
+                complemented the performance. We have won an Edison award for
+                our efforts, and our customers tell us that our air purifiers
+                are a perfect match for the modern home. But, our design is not
+                just meant to look good. It is critical to making sure that our
+                NASA developed technology gets just the right amount of air to
+                be as efficient as possible. This name for this is the Coanda
+                effect.
               </p>
             </div>
             <div className='flex w-full justify-end'>
             <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl'>
-                Learn more <IconArrowRight />
+                Shop Now <IconShoppingCart />
               </button>
             </div>
           </div>
         </div>
-        
+        <br/>
+
+        <div
+          className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 py-10 md:py-0 lg:py-0 xl:py-0 h-fit px-4 '
+          id='it_solutions'
+        >
+          <div className='flex w-full items-center col-span-1 px-5 md:px-0 lg:px-0 xl:px-0 py-0 mix-blend-multiply ' style={{backgroundImage:"url(iot_bd.png)", backgroundSize:"contain", backgroundRepeat:"no-repeat", backgroundPosition:"center"}}>
+            
+            
+          <Carousel emulateTouch={false} swipeable={false} showStatus={false} showArrows={false} autoPlay={true} infiniteLoop={true}  showThumbs={false} className=' z-10 flex w-full items-center justify-center'>
+                <div className="">
+                    <img src="halo_1.png"  alt="image1" className="h-[500px] object-contain object-center"/>
+                </div>
+                <div>
+                    <img src="halo_2.png" className="h-[550px] object-contain object-center" />
+                </div>
+                
+            </Carousel>
+          </div>
+          <div className='flex flex-col w-full col-span-1 px-5 md:px-20 lg:px-20 xl:px-20 py-0 md:py-10 lg:py-10 xl:py-10 justify-between'>
+            <div>
+
+           
+            <h1 className='font-bold text-2xl mt-3 md:text-5xl lg:text-5xl xl:text-5xl'>
+              IOT Solutions
+            </h1>
+            <p className='md:mt-10 lg:mt-10 xl:mt-10 mt-2 '>
+            As part of the newest v2.5 software release, HALO provides both a real-time Air Quality and Health Index that sends alerts when either index falls into danger zones. In conjunction with HALO Cloud, the sensor also provides critical automated reports that allow building owners and administrators to demonstrate they are providing a healthy indoor environment and/or validate that facility improvement is needed.
+            </p>
+            </div>
+            <div className='flex w-full justify-end'>
+              <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl'>
+                Shop Now <IconShoppingCart />
+              </button>
+            </div>
+          </div>
+        </div>
+        <br/>
+        <div
+          className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 py-10 md:py-0 lg:py-0 xl:py-0 h-fit  '
+          id='air_purification'
+        >
+          <div className=' flex-col w-full  col-span-1 px-5 md:px-20 lg:px-20 xl:px-20 hidden md:flex lg:flex xl:flex  z-10 py-10 justify-between '>
+            <div>
+              <h1 className='font-bold text-2xl mt-3 md:text-5xl lg:text-5xl xl:text-5xl  z-10'>
+              Water Solutions
+              </h1>
+              <p className='md:mt-10 lg:mt-10 xl:mt-10 mt-2   z-10'>
+              The STABFOR® device restores the water to its "original rawness," pure flavor, and mountain spring perfume through the synergistic action of many types of particles and energy in the water. The STABFOR® unit is designed to treat the complete water supply system in a condominium, single-family home, inn, hotel, industrial facility, etc. The device is mounted on the building's or a portion of it's inlet from the public or private distribution system, guaranteeing that the whole building's water system is treated. It produces free hydrogen H- and electrified water. It cleanses the water of microbes and harmonises the energy present. 
+
+              </p>
+            </div>
+            <div className='flex w-full justify-end'>
+            <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl'>
+                Shop Now <IconShoppingCart />
+              </button>
+            </div>
+          </div>
+          <div className='flex w-full items-center col-span-1 px-5 md:px-0 lg:px-0 xl:px-0 py-0 mix-blend-multiply' style={{background:"url(water_bd.png)",backgroundBlendMode:"lighten", backgroundSize:"contain", backgroundRepeat:"no-repeat", backgroundPosition:"center"}}>
+            
+            
+          <Carousel emulateTouch={false} swipeable={false} showStatus={false} showArrows={false} autoPlay={true} infiniteLoop={true}  showThumbs={false} className=' z-10 flex w-full items-center justify-center'>
+                <div className="">
+                    <img src="stabfor_img.png"  alt="image1" className="h-[550px] object-contain object-center"/>
+                </div>
+                <div>
+                    <img src="stabfor_img_2.png" className="h-[550px] object-contain object-center" />
+                </div>
+                
+            </Carousel>
+          </div>
+          <div className='flex flex-col w-full col-span-1 px-5 md:px-20 lg:px-20 xl:px-20 md:hidden lg:hidden xl:hidden  justify-between'>
+            <div>
+              <h1 className='font-bold text-2xl mt-3 md:text-5xl lg:text-5xl xl:text-5xl z-10'>
+              Water Solutions
+              </h1>
+              <p className='md:mt-10 lg:mt-10 xl:mt-10 mt-2  z-10'>
+              The STABFOR® device restores the water to its "original rawness," pure flavor, and mountain spring perfume through the synergistic action of many types of particles and energy in the water. The STABFOR® unit is designed to treat the complete water supply system in a condominium, single-family home, inn, hotel, industrial facility, etc. The device is mounted on the building's or a portion of it's inlet from the public or private distribution system, guaranteeing that the whole building's water system is treated. It produces free hydrogen H- and electrified water. It cleanses the water of microbes and harmonises the energy present. 
+
+              </p>
+            </div>
+            <div className='flex w-full justify-end'>
+            <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl'>
+                Shop Now <IconShoppingCart />
+              </button>
+            </div>
+          </div>
+        </div>
+        <br/>
+        <br/>
       </div>
-    </div>
+
   );
 };
 

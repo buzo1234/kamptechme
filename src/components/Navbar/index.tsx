@@ -32,6 +32,8 @@ const useStyles = createStyles((theme) => ({
   root: {
     position: "relative",
     zIndex: 1,
+    margin:0,
+    padding:0,
   },
 
   dropdown: {
@@ -55,6 +57,7 @@ const useStyles = createStyles((theme) => ({
     justifyContent: "space-between",
     alignItems: "center",
     height: "100%",
+    
   },
 
   links: {
@@ -256,7 +259,7 @@ const Navbar = ({ links }: HeaderResponsiveProps) => {
   return (
     <div className="sticky top-0 left-0 z-50">
       <Header height={HEADER_HEIGHT} className={classes.root}>
-        <Container className={classes.header}>
+        <Container className={classes.header} style={{margin:"auto"}}>
           <Link href={"/"}>
           
           <Group className="cursor-pointer">
@@ -267,7 +270,7 @@ const Navbar = ({ links }: HeaderResponsiveProps) => {
                 letterSpacing: "1.8",
               }}
             >
-              Kamptech
+              Kamptech Solutions
             </Text>
           </Group>
           </Link>
