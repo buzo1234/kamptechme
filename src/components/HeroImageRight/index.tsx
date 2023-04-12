@@ -25,7 +25,7 @@ const useStyles = createStyles((theme) => ({
     paddingBottom: `calc(${theme.spacing.xl} *4)`,
     display:"relative",
 
-    [theme.fn.smallerThan("md")]: {
+    [theme.fn.smallerThan("sm")]: {
       paddingTop: 0,
       paddingBottom:`calc(${theme.spacing.xl} *1)`,
     },
@@ -67,7 +67,7 @@ const useStyles = createStyles((theme) => ({
     maxWidth: rem(500),
     fontSize: rem(48),
 
-    [theme.fn.smallerThan("md")]: {
+    [theme.fn.smallerThan("sm")]: {
       maxWidth: "100%",
       fontSize: rem(34),
       lineHeight: 1.15,
@@ -79,7 +79,7 @@ const useStyles = createStyles((theme) => ({
     opacity: 0.75,
     maxWidth: rem(500),
 
-    [theme.fn.smallerThan("md")]: {
+    [theme.fn.smallerThan("sm")]: {
       maxWidth: "100%",
     },
   },
@@ -102,8 +102,19 @@ const useStyles = createStyles((theme) => ({
     top:0,
     zIndex:-10,
     width:"100%",
-    height:"100%",
+    
     left:0,
+    [theme.fn.smallerThan("sm")]: {
+      background: "#000000",
+    },
+  },
+
+  frontContent:{
+    margin:0,
+    padding:rem(20),
+    background:"linear-gradient(250deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%,   #000000  98%)",
+    height:"100%",
+    width:"100%",
     [theme.fn.smallerThan("sm")]: {
       background: "#000000",
     },
@@ -115,9 +126,7 @@ export function HeroImageRight() {
   return (
     <div className={classes.root} style={{pointerEvents:"none"}}>
 
-      <div className={classes.backshade} >
-
-      </div>
+     
 
       <div style={{pointerEvents:"all"}}>
 
@@ -132,7 +141,7 @@ export function HeroImageRight() {
                 
             </Carousel>
       </div>
-      <Container size="lg"  >
+      <Container size="lg" className={classes.frontContent}  /* style={{background:"linear-gradient(250deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%,   #000000  98%)", margin:0, height:"100%", width:"100%", padding:rem(20)}} */>
         <div className={classes.inner }>
           <div className={classes.content}>
             <Title className={classes.title}>
