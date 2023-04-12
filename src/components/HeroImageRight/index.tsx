@@ -112,7 +112,7 @@ const useStyles = createStyles((theme) => ({
   frontContent:{
     margin:0,
     padding:rem(20),
-    background:"linear-gradient(250deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%,   #000000  98%)",
+    background:"linear-gradient(250deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%,   #000000  98%)",
     height:"100%",
     width:"100%",
     [theme.fn.smallerThan("sm")]: {
@@ -145,14 +145,14 @@ export function HeroImageRight() {
         <div className={classes.inner }>
           <div className={classes.content}>
             <Title className={classes.title}>
-              Designing{" "}
+              Building{" "}
               <Text
                 component="span"
                 inherit
                 variant="gradient"
                 gradient={{ from: "pink", to: "yellow" }}
               >
-                fully Sustainable
+                Smart, High Performance & Sustainable
               </Text>{" "}
               Products for Future!
             </Title>

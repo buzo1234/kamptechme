@@ -29,7 +29,7 @@ export default function Home() {
         <Crousels />
 
         <About />
-        <Banner />
+        
         
         <EmailBanner />
       </main>

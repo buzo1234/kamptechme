@@ -44,11 +44,23 @@ const useStyles = createStyles((theme) => ({
   title: {
     fontSize: rem(34),
     fontWeight: 900,
-
-    [theme.fn.smallerThan('sm')]: {
+    paddingRight:rem(20),
+    paddingLeft:rem(20),
+    [theme.fn.smallerThan("sm")]: {
       fontSize: rem(24),
     },
+  
+    "&::after": {
+      content: '""',
+      display: "block",
+      width: rem(80),
+      height: rem(2),
+      backgroundColor: theme.fn.primaryColor(),
+      marginLeft: "auto",
+      marginRight: "auto",
+    },
   },
+  
 
   description: {
     maxWidth: 600,
@@ -135,8 +147,13 @@ const FeaturesCards = () => {
 
   return (
     <div className='mt-20 '>
-      <Title order={2} className={classes.title} ta='center' mt='sm'>
-        Designing products for sustainable future!
+      <Title order={2}
+          mb={"lg"}
+          mt={"sm"}
+          className={classes.title}
+         
+          ta={"center"}>
+        BUILDING TECHNOLOGY OF THE FUTURE
       </Title>
 
       <Text c='dimmed' className={classes.description} ta='center' mt='sm'>
