@@ -27,13 +27,17 @@ const MapBoxComp = () => {
       zoom: 12,
     });
 
+  
+    mapboxMap.on('load' , () => {
+        new mapboxgl.Marker({
+            anchor:"top",
+            scale:1.2,
+            color: "#000000",
+            draggable: false
+            }).setLngLat([55.32423381087544, 25.259052426409283]).addTo(mapboxMap);
+    })
 
-    new mapboxgl.Marker({
-        anchor:"top",
-        scale:1.2,
-        color: "#000000",
-        draggable: false
-        }).setLngLat([55.32423381087544, 25.259052426409283]).addTo(mapboxMap);
+   
 
     
 
