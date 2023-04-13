@@ -14,6 +14,8 @@ import {
   IconBrandTwitter,
   IconBrandYoutube,
   IconBrandInstagram,
+  IconBrandFacebook,
+  IconBrandLinkedin,
 } from "@tabler/icons-react";
 import { ContactIconsList } from "../ContactIcons/ContactIcons";
 import Link from "next/link";
@@ -82,12 +84,12 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-const social = [IconBrandInstagram];
+const social = [{iconBrand: IconBrandInstagram,link: "https://www.instagram.com/kamptech11/"}, {iconBrand:IconBrandTwitter , link:"https://twitter.com/Kamptech11/"}, {iconBrand:IconBrandFacebook, link:"https://www.facebook.com/profile.php?id=100091748850716&mibextid=ZbWKwL"}, {iconBrand:IconBrandLinkedin, link:"https://www.linkedin.com/company/kamptech-solutions/"}];
 
 const EmailBanner = () => {
   const { classes } = useStyles();
 
-  const icons = social.map((Icon, index) => (
+  const icons = social.map((obj, index) => (
     <ActionIcon
       key={index}
       size={28}
@@ -95,9 +97,9 @@ const EmailBanner = () => {
       variant="transparent"
       
     >
-      <Link href="https://www.instagram.com/kamptech11/">
+      <Link href={obj.link}>
       
-      <Icon size="1.4rem" stroke={1.5} />
+      <obj.iconBrand size="1.4rem" stroke={1.5} />
       </Link>
     </ActionIcon>
   ));

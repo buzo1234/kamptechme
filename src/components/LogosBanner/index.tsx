@@ -58,18 +58,22 @@ const LogosBanner = () => {
         ta={"center"}>
           OUR PARTNERS
         </Title>
-        <div /* className={classes.slide} */ className="w-full grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-y-8 md:gap-y-0 lg:gap-y-0 xl:gap-y-0 gap-x-8 ">
-          <div className="flex col-span-1 justify-center items-center w-full   px-8 py-3">
+        {/* grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-y-8 md:gap-y-0 lg:gap-y-0 xl:gap-y-0 gap-x-8 */}
+        <div /* className={classes.slide} */ className="w-full mx-auto flex-wrap flex px-4  justify-center">
+          <div className="flex  justify-center items-center w-[170px] md:w-[185px] lg:w-[200px] xl:w-[210px]   px-8 py-3">
             <Image src={"airocide.svg"} alt="logo..."  fit="contain"/>
           </div>
-          <div className="flex col-span-1 justify-center items-center w-full   px-8 py-3" >
+          <div className="flex  justify-center items-center w-[170px] md:w-[185px] lg:w-[200px] xl:w-[210px]   px-8 py-3" >
             <Image src={"stabfor.png"} alt="logo..." fit="contain" />
           </div>
-          <div  className="flex col-span-1 justify-center  items-center w-full   px-8 py-2">
+          <div  className="flex  justify-center  items-center w-[170px] md:w-[185px] lg:w-[200px] xl:w-[210px]   px-8 py-2">
             <Image src={"MSI_2_nobg.png"} alt="logo..."  fit="contain"/>
           </div>
-          <div  className="flex col-span-1 justify-center  items-center w-full   px-8 py-2">
-            <Image src={"batta.png"} alt="logo..."  fit="contain"/>
+          <div  className="flex  justify-center  items-center w-[170px] md:w-[185px] lg:w-[200px] xl:w-[210px]   px-8 py-2">
+            <Image src={"puro.png"} alt="logo..."  fit="contain"/>
+          </div>
+          <div  className="flex  justify-center  items-center w-[170px] md:w-[185px] lg:w-[200px] xl:w-[210px]   px-8 py-2">
+            <Image src={"ip_video.png"} alt="logo..."  fit="contain"/>
           </div>
         </div>
       </div>

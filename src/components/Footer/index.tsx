@@ -11,6 +11,8 @@ import {
   IconBrandTwitter,
   IconBrandYoutube,
   IconBrandInstagram,
+  IconBrandFacebook,
+  IconBrandLinkedin,
 } from "@tabler/icons-react";
 import Link from "next/link";
 
@@ -183,6 +185,24 @@ const Footer = ({ data }: FooterLinksProps) => {
             <Link href="https://www.instagram.com/kamptech11/">
             
             <IconBrandInstagram size="1.05rem" stroke={1.5} />
+            </Link>
+          </ActionIcon>
+          <ActionIcon size="lg">
+            <Link href="https://twitter.com/Kamptech11/">
+            
+            <IconBrandTwitter size="1.05rem" stroke={1.5} />
+            </Link>
+          </ActionIcon>
+          <ActionIcon size="lg">
+            <Link href="https://www.facebook.com/profile.php?id=100091748850716&mibextid=ZbWKwL">
+            
+            <IconBrandFacebook size="1.05rem" stroke={1.5} />
+            </Link>
+          </ActionIcon>
+          <ActionIcon size="lg">
+            <Link href="https://www.linkedin.com/company/kamptech-solutions/">
+            
+            <IconBrandLinkedin size="1.05rem" stroke={1.5} />
             </Link>
           </ActionIcon>
         </Group>

@@ -298,6 +298,9 @@ const FeaturesCards = () => {
                 <div>
                     <img src="halo_2.png" className="h-[550px] object-contain object-center" />
                 </div>
+                <div>
+                    <img src="puro_air.png" className="h-[550px] object-contain object-center" />
+                </div>
                 
             </Carousel>
           </div>

@@ -301,7 +301,7 @@ const Navbar = ({ links }: HeaderResponsiveProps) => {
                 letterSpacing: "1.8",
               }}
             >
-              Kamptech
+              Kamptech Solutions
             </Text>
           </Group>
         }
