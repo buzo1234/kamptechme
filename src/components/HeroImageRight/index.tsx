@@ -139,7 +139,7 @@ export function HeroImageRight() {
                     <img src="airocide_bg.jpg" className=" object-cover object-center" />
                 </div>
                 <div>
-                    <img src="banner_3.jpg" className=" object-fill object-center" />
+                    <img src="banner_4.jpg" className=" object-fill object-center" />
                 </div>
                 
             </Carousel>
