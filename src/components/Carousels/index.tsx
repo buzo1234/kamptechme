@@ -20,6 +20,9 @@ import {
   IconShoppingCart
 } from '@tabler/icons-react';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -211,7 +214,9 @@ const FeaturesCards = () => {
             </p>
             </div>
             <div className='flex w-full justify-end'>
-              <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl'>
+              <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl' onClick={() => toast.info("Ecommerce coming soon!", {
+        position: toast.POSITION.TOP_CENTER
+      })}>
                 Shop Now <IconShoppingCart />
               </button>
             </div>
@@ -240,7 +245,9 @@ const FeaturesCards = () => {
               </p>
             </div>
             <div className='flex w-full justify-end'>
-            <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl'>
+            <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl' onClick={() => toast.info("Ecommerce coming soon!", {
+        position: toast.POSITION.TOP_CENTER
+      })}>
                 Shop Now <IconShoppingCart />
               </button>
             </div>
@@ -276,7 +283,9 @@ const FeaturesCards = () => {
               </p>
             </div>
             <div className='flex w-full justify-end'>
-            <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl'>
+            <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl' onClick={() => toast.info("Ecommerce coming soon!", {
+        position: toast.POSITION.TOP_CENTER
+      })}>
                 Shop Now <IconShoppingCart />
               </button>
             </div>
@@ -316,7 +325,9 @@ const FeaturesCards = () => {
             </p>
             </div>
             <div className='flex w-full justify-end'>
-              <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl'>
+              <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl' onClick={() => toast.info("Ecommerce coming soon!", {
+        position: toast.POSITION.TOP_CENTER
+      })}>
                 Shop Now <IconShoppingCart />
               </button>
             </div>
@@ -338,7 +349,9 @@ const FeaturesCards = () => {
               </p>
             </div>
             <div className='flex w-full justify-end'>
-            <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl'>
+            <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl' onClick={() => toast.info("Ecommerce coming soon!", {
+        position: toast.POSITION.TOP_CENTER
+      })}>
                 Shop Now <IconShoppingCart />
               </button>
             </div>
@@ -367,7 +380,9 @@ const FeaturesCards = () => {
               </p>
             </div>
             <div className='flex w-full justify-end'>
-            <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl'>
+            <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl' onClick={() => toast.info("Ecommerce coming soon!", {
+        position: toast.POSITION.TOP_CENTER
+      })}>
                 Shop Now <IconShoppingCart />
               </button>
             </div>

@@ -133,15 +133,17 @@ export function HeroImageRight() {
       
       <Carousel showStatus={false} showArrows={false} autoPlay={true} infiniteLoop={true} className="md:absolute lg:absolute xl:absolute left-0 top-0 bottom-0 right-0 -z-20 flex-col flex max-h-[750px] pt-0  md:pt-14 lg:pt-14 xl:pt-14 " showThumbs={false}>
                 <div className="z-10">
-                    <img src="msi_bg.jpg"  alt="image1" className="h-full object-cover object-center"/>
+                    <img src="msi_bg.jpg"  alt="image1" className="h-fit aspect-video object-cover w-full object-center"/>
                 </div>
                 <div>
-                    <img src="airocide_bg.jpg" className=" object-cover object-center" />
+                    <img src="airocide_bg.jpg" className="h-fit aspect-video object-cover w-full object-center" />
                 </div>
                 <div>
-                    <img src="banner_4.jpg" className=" object-fill object-center" />
+                    <img src="banner_3.jpg" className="h-fit aspect-video object-cover w-full object-center" />
                 </div>
-                
+                <div>
+                    <img src="banner_4.jpg" className="h-fit aspect-video object-cover w-full object-center" />
+                </div>
             </Carousel>
       </div>
       <Container size="lg" className={classes.frontContent}  /* style={{background:"linear-gradient(250deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%,   #000000  98%)", margin:0, height:"100%", width:"100%", padding:rem(20)}} */>

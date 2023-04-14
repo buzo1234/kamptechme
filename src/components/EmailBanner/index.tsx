@@ -19,6 +19,10 @@ import {
 } from "@tabler/icons-react";
 import { ContactIconsList } from "../ContactIcons/ContactIcons";
 import Link from "next/link";
+import emailjs from '@emailjs/browser';
+import { useRef, useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -88,6 +92,54 @@ const social = [{iconBrand: IconBrandInstagram,link: "https://www.instagram.com/
 
 const EmailBanner = () => {
   const { classes } = useStyles();
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [msg, setMsg] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+
+    let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if(name.length<=0 || !re.test(email) || msg.length<=0) {
+      toast.warn("Please fill valid details!", {
+        position: toast.POSITION.TOP_CENTER
+      });
+      setLoading(false);
+      return;
+    };
+
+    var templateParams = {
+      to_email : email,
+      from_email: email,
+      from_name: name,
+      message: msg,
+    }
+
+    emailjs.send('service_jg8u3bi', 'template_5ll11hj', templateParams, 'UsSzvVbDEpk0x3aR0')
+      .then((result) => {
+          console.log(result.text);
+          toast.success("Message sent Successfully!", {
+            position: toast.POSITION.TOP_CENTER
+          });
+
+          setName('');
+          setEmail('');
+          setMsg('');
+          setLoading(false);
+          
+      }, (error) => {
+          console.log(error.text);
+          toast.error("Some Error Occurred!", {
+            position: toast.POSITION.TOP_LEFT
+          });
+          setLoading(false);
+      });
+  };
 
   const icons = social.map((obj, index) => (
     <ActionIcon
@@ -106,6 +158,7 @@ const EmailBanner = () => {
 
   return (
     <div className={classes.wrapper} id="contact_us">
+      <ToastContainer />
       <SimpleGrid
         cols={2}
         spacing={50}
@@ -121,17 +174,25 @@ const EmailBanner = () => {
 
           <Group mt="xl">{icons}</Group>
         </div>
-        <div className={classes.form}>
+        <form ref={form} onSubmit={sendEmail} className={classes.form}>
+
           <TextInput
             label="Email"
             placeholder="Your email address"
             required
+            name="user_email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             classNames={{ input: classes.input, label: classes.inputLabel }}
-          />
+            />
           <TextInput
             label="Name"
             placeholder="Your Full Name"
             mt="md"
+            required
+            name="user_name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             classNames={{ input: classes.input, label: classes.inputLabel }}
           />
           <Textarea
@@ -140,14 +201,17 @@ const EmailBanner = () => {
             placeholder="Leave us a message :)"
             minRows={4}
             mt="md"
+            name="message"
+            value={msg}
+            onChange={(e) => setMsg(e.target.value)}
             classNames={{ input: classes.input, label: classes.inputLabel }}
           />
 
           <Group position="right" mt="md">
             {/* <Button className={classes.control}>Send message</Button> */}
-            <button className="text-white font-semibold text-sm px-3 py-2 rounded-md bg-blue-600">Send message</button>
+            <button className={loading? "text-white font-semibold text-sm px-3 py-2 rounded-md bg-blue-600 cursor-not-allowed" :"text-white font-semibold text-sm px-3 py-2 rounded-md bg-blue-600"}>{loading ? "Sending..."  : "Send message"}</button>
           </Group>
-        </div>
+            </form>
       </SimpleGrid>
     </div>
   );
