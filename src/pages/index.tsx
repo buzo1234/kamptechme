@@ -21,7 +21,7 @@ export default function Home() {
     return (
       <div className="scroll-smooth">
         <Head>
-          <title>Kamptech</title>
+          <title>Kamptechme Solutions</title>
           <meta name="description" content="Industry leading company with products for sustainable future" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/logo.png" />
