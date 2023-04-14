@@ -2,12 +2,19 @@ import {
   Container,
   createStyles,
   Group,
-  Image,
+  
   rem,
   Text,
   Title,
 } from "@mantine/core";
 import React from "react";
+import Image from "next/image";
+
+import partner1 from '../../../public/airocide.png'
+import partner2 from '../../../public/stabfor.png'
+import partner3 from '../../../public/MSI_2_nobg.png'
+import partner4 from '../../../public/puro.png'
+import partner5 from '../../../public/ip_video.png'
 
 const useStyle = createStyles((theme) => ({
   container: {
@@ -61,19 +68,19 @@ const LogosBanner = () => {
         {/* grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-y-8 md:gap-y-0 lg:gap-y-0 xl:gap-y-0 gap-x-8 */}
         <div /* className={classes.slide} */ className="w-full mx-auto flex-wrap flex px-4  justify-center">
           <div className="flex  justify-center items-center w-[170px] md:w-[185px] lg:w-[200px] xl:w-[210px]   px-8 py-3">
-            <Image src={"airocide.svg"} alt="logo..."  fit="contain"/>
+            <Image src={partner1} placeholder="blur" width={170} height={100} alt="logo..."  style={{objectFit:"contain"}}/>
           </div>
           <div className="flex  justify-center items-center w-[170px] md:w-[185px] lg:w-[200px] xl:w-[210px]   px-8 py-3" >
-            <Image src={"stabfor.png"} alt="logo..." fit="contain" />
+            <Image src={partner2} placeholder="blur" width={170} height={100} alt="logo..." style={{objectFit:"contain"}} />
           </div>
           <div  className="flex  justify-center  items-center w-[170px] md:w-[185px] lg:w-[200px] xl:w-[210px]   px-8 py-2">
-            <Image src={"MSI_2_nobg.png"} alt="logo..."  fit="contain"/>
+            <Image src={partner3} placeholder="blur" width={170} height={100} alt="logo..."  style={{objectFit:"contain"}}/>
           </div>
           <div  className="flex  justify-center  items-center w-[170px] md:w-[185px] lg:w-[200px] xl:w-[210px]   px-8 py-2">
-            <Image src={"puro.png"} alt="logo..."  fit="contain"/>
+            <Image src={partner4} placeholder="blur" width={170} height={100} alt="logo..."  style={{objectFit:"contain"}}/>
           </div>
           <div  className="flex  justify-center  items-center w-[170px] md:w-[185px] lg:w-[200px] xl:w-[210px]   px-8 py-2">
-            <Image src={"ip_video.png"} alt="logo..."  fit="contain"/>
+            <Image src={partner5} placeholder="blur" width={170} height={100} alt="logo..."  style={{objectFit:"contain"}}/>
           </div>
         </div>
       </div>

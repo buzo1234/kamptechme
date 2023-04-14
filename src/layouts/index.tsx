@@ -1,6 +1,7 @@
 import { Navbar, Footer } from "@/components";
 import { data } from "@/components/Footer/data";
 import { IconDropletFilled, IconBuildingCarousel,IconCpu, IconAffiliate  } from "@tabler/icons-react";
+import { useEffect, useState } from "react";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -50,11 +51,20 @@ const navData = {
   ],
 };
 export default function Layout({ children }: LayoutProps) {
+  const [domLoaded, setDomLoaded] = useState(false);
+
+  useEffect(() => {
+    setDomLoaded(true);
+  }, []);
+  
   return (
     <>
-      <Navbar links={navData.links} />
+      {domLoaded ? (<div><Navbar links={navData.links} />
       <main id="home">{children}</main>
-      <Footer data={data.data} />
+      <Footer data={data.data} /></div>) : (<div className="flex flex-col w-full h-screen justify-center items-center">
+        <img src="logo.png" alt="logo" className="w-[50px] h-[50px] object-contain" />
+        <p className="font-semibold text-2xl">Loading...</p>
+      </div>)}
     </>
   );
 }

@@ -12,6 +12,11 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import Image from "next/image";
 
+import banner1 from '../../../public/msi_bg.jpg';
+import banner2 from '../../../public/airocide_bg.jpg';
+import banner3 from '../../../public/banner_3.jpg';
+import banner4 from '../../../public/banner_4.jpg';
+
 const useStyles = createStyles((theme) => ({
   root: {
     
@@ -131,18 +136,20 @@ export function HeroImageRight() {
       <div style={{pointerEvents:"all"}}>
 
       
-      <Carousel showStatus={false} showArrows={false} autoPlay={true} infiniteLoop={true} className="md:absolute lg:absolute xl:absolute left-0 top-0 bottom-0 right-0 -z-20 flex-col flex max-h-[750px] pt-0  md:pt-14 lg:pt-14 xl:pt-14 " showThumbs={false}>
+      <Carousel showStatus={false} showArrows={false} autoPlay={true} infiniteLoop={true} className="md:absolute lg:absolute xl:absolute left-0 top-0 bottom-0 right-0 -z-20 flex-col flex max-h-[750px] pt-0  md:pt-14 lg:pt-14 xl:pt-14 w-full " showThumbs={false}>
                 <div className="z-10">
-                    <img src="msi_bg.jpg"  alt="image1" className="h-fit aspect-video object-cover w-full object-center"/>
+                    <Image src={banner1} placeholder="blur" height={1080} width={1920}   
+                    blurDataURL="h" alt="banner1"   style={{objectFit:"cover"}} className="h-fit aspect-video object-cover w-full object-center"/>
                 </div>
                 <div>
-                    <img src="airocide_bg.jpg" className="h-fit aspect-video object-cover w-full object-center" />
+                    <Image src={banner2} placeholder="blur"  height={1080} width={1920}  
+                     alt="banner2"   style={{objectFit:"cover"}}  className="h-fit aspect-video object-cover w-full object-center" />
                 </div>
                 <div>
-                    <img src="banner_3.jpg" className="h-fit aspect-video object-cover w-full object-center" />
+                    <Image src={banner3} placeholder="blur"  height={1080} width={1920} alt="banner3"    style={{objectFit:"cover"}} className="h-fit aspect-video object-cover w-full object-center" />
                 </div>
                 <div>
-                    <img src="banner_4.jpg" className="h-fit aspect-video object-cover w-full object-center" />
+                    <Image src={banner4} placeholder="blur"  height={1080} width={1920}  alt="banner4"   style={{objectFit:"cover"}} className="h-fit aspect-video object-cover w-full object-center" />
                 </div>
             </Carousel>
       </div>
