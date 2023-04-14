@@ -164,7 +164,7 @@ const Footer = ({ data }: FooterLinksProps) => {
             </Text>
           </Group>
           <Text size="xs" color="dimmed" className={classes.description}>
-            Designing technology for sustainable future!
+            Building Smart, High Performance & Sustainable products for Future!
           </Text>
         </div>
         <div className={classes.groups}>{groups}</div>
