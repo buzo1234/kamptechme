@@ -64,7 +64,7 @@ const About = () => {
           cleaner and better. We specialize in clean energy, clean air and clean
           water solutions that utilze IoT technology to make them more efficient
           and effective. Our products are designed to improve the quality of our
-          envionment and make it sustainable for future generations. Moreover,
+          environment and make it sustainable for future generations. Moreover,
           we have diversified into the IT solutions domain to help our customers
           in their digital transformation journey and increase their
           productibity and efficiency. We believe that technology can be a
