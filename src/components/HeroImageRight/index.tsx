@@ -7,7 +7,7 @@ import {
   rem,
 } from '@mantine/core';
 import Link from 'next/link';
-import { useEffect, useLayoutEffect, useRef } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -19,7 +19,7 @@ const useStyles = createStyles((theme) => ({
   root: {
     display: 'flex',
     position: 'relative',
-    height:"fit-content",
+    minHeight:"600px",
     flexDirection:"column",
     backgroundColor: 'black',
     [theme.fn.smallerThan('sm')]: {
@@ -127,6 +127,9 @@ export function HeroImageRight() {
   const parentRef = useRef<HTMLDivElement>(null);
   const childRef = useRef<HTMLDivElement>(null);
 
+  const [isLoading, setIsLoading] = useState(true);
+
+
   useLayoutEffect(() => {
     if (childRef.current && parentRef.current) {
       const childHeight = childRef.current.offsetHeight;
@@ -135,6 +138,10 @@ export function HeroImageRight() {
       console.log(childHeight, parentRef.current.style.height);
     }
   }, []);
+
+  const handleImageLoad = () => {
+    setIsLoading(false);
+  };
 
   return (
     <div className={classes.root} style={{ pointerEvents: 'none' }}>
@@ -148,32 +155,57 @@ export function HeroImageRight() {
           showThumbs={false}
         >
           <div className='z-10 h-full flex items-center justify-center'>
-            <img
+            {isLoading ?  <img
+              src='placeholderImage.webp' loading='lazy'
+              alt='banner1'
+              onLoad={handleImageLoad}
+              className='h-full aspect-auto object-center w-full object-contain '
+            /> :  <img
               src='https://appwrite.techsouqdubai.com/v1/storage/buckets/647724cbbee87d2e8f59/files/64772506bd1d1a8ea931/view?project=646339a61beac87efd09&mode=admin' loading='lazy'
               alt='banner1'
+              onLoad={handleImageLoad}
               className='h-full aspect-auto object-center w-full object-contain '
-            />
+            />}
+           
           </div>
           <div className='z-10 h-full flex items-center justify-center'>
+          {isLoading ?  <img
+              src='placeholderImage.webp' loading='lazy'
+              alt='banner1'
+              onLoad={handleImageLoad}
+              className='h-full aspect-auto object-center w-full object-contain '
+            /> :  
             <img
               src='https://appwrite.techsouqdubai.com/v1/storage/buckets/647724cbbee87d2e8f59/files/6477428a26296fd65760/view?project=646339a61beac87efd09&mode=admin' loading='lazy'
               alt='banner1'
               className='h-full aspect-auto object-center w-full object-contain '
-            />
+            />}
           </div>
           <div className='z-10 h-full flex items-center justify-center'>
+          {isLoading ?  <img
+              src='placeholderImage.webp' loading='lazy'
+              alt='banner1'
+              onLoad={handleImageLoad}
+              className='h-full aspect-auto object-center w-full object-contain '
+            /> :  
             <img
               src='https://appwrite.techsouqdubai.com/v1/storage/buckets/647724cbbee87d2e8f59/files/64774295a6f8f40b527b/view?project=646339a61beac87efd09&mode=admin' loading='lazy'
               alt='banner1'
               className='h-full aspect-auto object-center w-full object-contain '
-            />
+            />}
           </div>
           <div className='z-10 h-full flex items-center justify-center'>
+          {isLoading ?  <img
+              src='placeholderImage.webp' loading='lazy'
+              alt='banner1'
+              onLoad={handleImageLoad}
+              className='h-full aspect-auto object-center w-full object-contain '
+            /> :  
             <img
               src='https://appwrite.techsouqdubai.com/v1/storage/buckets/647724cbbee87d2e8f59/files/6477429ab9da4c61356c/view?project=646339a61beac87efd09&mode=admin' loading='lazy'
               alt='banner1'
               className='h-full aspect-auto object-center w-full object-contain '
-            />
+            />}
           </div>
           {/* <div>
                     <Image src={banner2} placeholder="blur"  height={1080} width={1920}  
