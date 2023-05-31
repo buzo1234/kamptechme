@@ -149,28 +149,28 @@ export function HeroImageRight() {
         >
           <div className='z-10 h-full flex items-center justify-center'>
             <img
-              src='https://appwrite.techsouqdubai.com/v1/storage/buckets/647724cbbee87d2e8f59/files/64772506bd1d1a8ea931/view?project=646339a61beac87efd09&mode=admin'
+              src='https://appwrite.techsouqdubai.com/v1/storage/buckets/647724cbbee87d2e8f59/files/64772506bd1d1a8ea931/view?project=646339a61beac87efd09&mode=admin' loading='lazy'
               alt='banner1'
               className='h-full aspect-auto object-center w-full object-contain '
             />
           </div>
           <div className='z-10 h-full flex items-center justify-center'>
             <img
-              src='https://appwrite.techsouqdubai.com/v1/storage/buckets/647724cbbee87d2e8f59/files/6477428a26296fd65760/view?project=646339a61beac87efd09&mode=admin'
+              src='https://appwrite.techsouqdubai.com/v1/storage/buckets/647724cbbee87d2e8f59/files/6477428a26296fd65760/view?project=646339a61beac87efd09&mode=admin' loading='lazy'
               alt='banner1'
               className='h-full aspect-auto object-center w-full object-contain '
             />
           </div>
           <div className='z-10 h-full flex items-center justify-center'>
             <img
-              src='https://appwrite.techsouqdubai.com/v1/storage/buckets/647724cbbee87d2e8f59/files/64774295a6f8f40b527b/view?project=646339a61beac87efd09&mode=admin'
+              src='https://appwrite.techsouqdubai.com/v1/storage/buckets/647724cbbee87d2e8f59/files/64774295a6f8f40b527b/view?project=646339a61beac87efd09&mode=admin' loading='lazy'
               alt='banner1'
               className='h-full aspect-auto object-center w-full object-contain '
             />
           </div>
           <div className='z-10 h-full flex items-center justify-center'>
             <img
-              src='https://appwrite.techsouqdubai.com/v1/storage/buckets/647724cbbee87d2e8f59/files/6477429ab9da4c61356c/view?project=646339a61beac87efd09&mode=admin'
+              src='https://appwrite.techsouqdubai.com/v1/storage/buckets/647724cbbee87d2e8f59/files/6477429ab9da4c61356c/view?project=646339a61beac87efd09&mode=admin' loading='lazy'
               alt='banner1'
               className='h-full aspect-auto object-center w-full object-contain '
             />
