@@ -181,7 +181,7 @@ const FeaturesCards = () => {
           className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 py-10 md:py-0 lg:py-0 xl:py-0 h-fit px-4 '
           id='it_solutions'
         >
-          <div className='flex w-full items-center col-span-1 px-5 md:px-0 lg:px-0 xl:px-0 py-0 mix-blend-multiply ' style={{backgroundImage:"url(msi_bd.png)", backgroundSize:"contain", backgroundRepeat:"no-repeat", backgroundPosition:"center"}}>
+          <div className='flex w-full items-center col-span-1 px-5 md:px-0 lg:px-0 xl:px-0 py-0 mix-blend-multiply ' style={{backgroundImage:"url(https://appwrite.techsouqdubai.com/v1/storage/buckets/647724cbbee87d2e8f59/files/64774469c019bd1dc452/view?project=646339a61beac87efd09&mode=admin)", backgroundSize:"contain", backgroundRepeat:"no-repeat", backgroundPosition:"center"}}>
             
             
           <Carousel emulateTouch={false} swipeable={false} showStatus={false} showArrows={false} autoPlay={true} infiniteLoop={true}  showThumbs={false} className=' z-10 flex w-full items-center justify-center'>
@@ -252,7 +252,7 @@ const FeaturesCards = () => {
               </button>
             </div>
           </div>
-          <div className='flex w-full items-center col-span-1 px-5 md:px-0 lg:px-0 xl:px-0 py-0 mix-blend-multiply ' style={{background:"url(air_bd.png)", backgroundSize:"contain", backgroundRepeat:"no-repeat", backgroundPosition:"center"}}>
+          <div className='flex w-full items-center col-span-1 px-5 md:px-0 lg:px-0 xl:px-0 py-0 mix-blend-multiply ' style={{background:"url(https://appwrite.techsouqdubai.com/v1/storage/buckets/647724cbbee87d2e8f59/files/647744508ac2f2fa0393/view?project=646339a61beac87efd09&mode=admin)", backgroundSize:"contain", backgroundRepeat:"no-repeat", backgroundPosition:"center"}}>
             
             
           <Carousel emulateTouch={false} swipeable={false} showStatus={false} showArrows={false} autoPlay={true} infiniteLoop={true}  showThumbs={false} className=' z-10 flex w-full items-center justify-center'>
@@ -297,7 +297,7 @@ const FeaturesCards = () => {
           className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 py-10 md:py-0 lg:py-0 xl:py-0 h-fit px-4 '
           id='iot_solutions'
         >
-          <div className='flex w-full items-center col-span-1 px-5 md:px-0 lg:px-0 xl:px-0 py-0 mix-blend-multiply ' style={{backgroundImage:"url(iot_bd.png)", backgroundSize:"contain", backgroundRepeat:"no-repeat", backgroundPosition:"center"}}>
+          <div className='flex w-full items-center col-span-1 px-5 md:px-0 lg:px-0 xl:px-0 py-0 mix-blend-multiply ' style={{backgroundImage:"url(https://appwrite.techsouqdubai.com/v1/storage/buckets/647724cbbee87d2e8f59/files/6477445d0d38c5e8703b/view?project=646339a61beac87efd09&mode=admin)", backgroundSize:"contain", backgroundRepeat:"no-repeat", backgroundPosition:"center"}}>
             
             
           <Carousel emulateTouch={false} swipeable={false} showStatus={false} showArrows={false} autoPlay={true} infiniteLoop={true}  showThumbs={false} className=' z-10 flex w-full items-center justify-center'>
@@ -356,7 +356,7 @@ const FeaturesCards = () => {
               </button>
             </div>
           </div>
-          <div className='flex w-full items-center col-span-1 px-5 md:px-0 lg:px-0 xl:px-0 py-0 mix-blend-multiply' style={{background:"url(water_bd.png)",backgroundBlendMode:"lighten", backgroundSize:"contain", backgroundRepeat:"no-repeat", backgroundPosition:"center"}}>
+          <div className='flex w-full items-center col-span-1 px-5 md:px-0 lg:px-0 xl:px-0 py-0 mix-blend-multiply' style={{background:"url(https://appwrite.techsouqdubai.com/v1/storage/buckets/647724cbbee87d2e8f59/files/64774476939908ef6d37/view?project=646339a61beac87efd09&mode=admin)",backgroundBlendMode:"lighten", backgroundSize:"contain", backgroundRepeat:"no-repeat", backgroundPosition:"center"}}>
             
             
           <Carousel emulateTouch={false} swipeable={false} showStatus={false} showArrows={false} autoPlay={true} infiniteLoop={true}  showThumbs={false} className=' z-10 flex w-full items-center justify-center'>
