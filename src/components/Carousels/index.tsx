@@ -214,11 +214,9 @@ const FeaturesCards = () => {
             </p>
             </div>
             <div className='flex w-full justify-end'>
-              <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl' onClick={() => toast.info("Ecommerce coming soon!", {
-        position: toast.POSITION.TOP_CENTER
-      })}>
+              <a target="_blank" href="https://techsouqdubai.com/" rel="noopener noreferrer" className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl' >
                 Shop Now <IconShoppingCart />
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -245,11 +243,9 @@ const FeaturesCards = () => {
               </p>
             </div>
             <div className='flex w-full justify-end'>
-            <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl' onClick={() => toast.info("Ecommerce coming soon!", {
-        position: toast.POSITION.TOP_CENTER
-      })}>
+            <a target="_blank" href="https://techsouqdubai.com/" rel="noopener noreferrer" className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl' >
                 Shop Now <IconShoppingCart />
-              </button>
+              </a>
             </div>
           </div>
           <div className='flex w-full items-center col-span-1 px-5 md:px-0 lg:px-0 xl:px-0 py-0 mix-blend-multiply ' style={{background:"url(https://appwrite.techsouqdubai.com/v1/storage/buckets/647724cbbee87d2e8f59/files/647744508ac2f2fa0393/view?project=646339a61beac87efd09&mode=admin)", backgroundSize:"contain", backgroundRepeat:"no-repeat", backgroundPosition:"center"}}>
@@ -283,11 +279,9 @@ const FeaturesCards = () => {
               </p>
             </div>
             <div className='flex w-full justify-end'>
-            <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl' onClick={() => toast.info("Ecommerce coming soon!", {
-        position: toast.POSITION.TOP_CENTER
-      })}>
+            <a target="_blank" href="https://techsouqdubai.com/" rel="noopener noreferrer" className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl' >
                 Shop Now <IconShoppingCart />
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -325,11 +319,9 @@ const FeaturesCards = () => {
             </p>
             </div>
             <div className='flex w-full justify-end'>
-              <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl' onClick={() => toast.info("Ecommerce coming soon!", {
-        position: toast.POSITION.TOP_CENTER
-      })}>
+              <a target="_blank" href="https://techsouqdubai.com/" rel="noopener noreferrer" className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl' >
                 Shop Now <IconShoppingCart />
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -349,11 +341,9 @@ const FeaturesCards = () => {
               </p>
             </div>
             <div className='flex w-full justify-end'>
-            <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl' onClick={() => toast.info("Ecommerce coming soon!", {
-        position: toast.POSITION.TOP_CENTER
-      })}>
+            <a target="_blank" href="https://techsouqdubai.com/" rel="noopener noreferrer" className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl' >
                 Shop Now <IconShoppingCart />
-              </button>
+              </a>
             </div>
           </div>
           <div className='flex w-full items-center col-span-1 px-5 md:px-0 lg:px-0 xl:px-0 py-0 mix-blend-multiply' style={{background:"url(https://appwrite.techsouqdubai.com/v1/storage/buckets/647724cbbee87d2e8f59/files/64774476939908ef6d37/view?project=646339a61beac87efd09&mode=admin)",backgroundBlendMode:"lighten", backgroundSize:"contain", backgroundRepeat:"no-repeat", backgroundPosition:"center"}}>
@@ -380,11 +370,9 @@ const FeaturesCards = () => {
               </p>
             </div>
             <div className='flex w-full justify-end'>
-            <button className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl' onClick={() => toast.info("Ecommerce coming soon!", {
-        position: toast.POSITION.TOP_CENTER
-      })}>
+            <a target="_blank" href="https://techsouqdubai.com/" rel="noopener noreferrer" className='flex items-center mb-5 px-4 py-3 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-md text-white font-semibold gap-x-2 mt-3 md:mt-0 lg:mt-0 xl:mt-0 text-xl' >
                 Shop Now <IconShoppingCart />
-              </button>
+              </a>
             </div>
           </div>
         </div>
